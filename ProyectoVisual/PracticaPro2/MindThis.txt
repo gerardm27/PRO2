@@ -1,0 +1,14 @@
+Coses importants a tenir en compte while coding and commenting:
+
+	- Variables i derivats de variables en cursiva (\a);
+	- Certes coses a resaltar en negreta (\b); [No abusar]
+	- Per a fer una frase cursiva fer servir (<em>...</em>)
+	- Errors que puguin sorgir en warning (\warning);
+	- A sobre de cada nou archiu, especificarlo (\file i \brief);
+	- Per a varibles private fer un petit comentari (\short);
+	- Per a fer llistes de arguments fer servir davant de cada nova linia (\arg or \li);
+	- Check this, might be useful to drop some kmer or distance formulas around the specs document (\formula);
+	- Per a obrir una nova linia, igual que en printf de C (\n);
+	- Si fas algun define, marcarlo aixi (\def name);
+	- Quan un parametre pot ser de més d'un tipus es separa aixi (\param type1|type2 name);
+	- Per a fer un comentari (\note);

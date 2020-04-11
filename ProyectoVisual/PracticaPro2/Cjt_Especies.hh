@@ -1,13 +1,13 @@
 /** 
 	*\file Cjt_Especies.hh
-	*\brief Representa un conjunt d'Especies amb atributs kmer_value i map_especies, on l'ultim agrupa totes les especies.
-**/
+	*\brief Representa un conjunt d'Especies amb atributs \b kmer_value i \b map_especies, on l'ultim agrupa totes les especies.
+*/
 #pragma once
 #include <map>
 
 /**
-	*\class Cjt_Especies Cjt_Especies.hh
-	*\brief Classe de conjunt d'Especies, conte el valor \a kmer i un mapa d'especies.
+	*\class Cjt_Especies Cjt_Especies.hh 
+	*\brief Classe de conjunt d'Especies, conte el valor \a kmer i un <em>mapa d'especies</em>.
 */
 class Cjt_Especies
 {
@@ -27,7 +27,7 @@ private:
 	*/
 	int kmer_value;
 	/** 
-		*\short Mapa d'especies amb \a identificador i \a gen, respectivament. Agrupa especies per al calcul de WPGMA.
+		*\short Mapa d'especies amb \a identificador i \a gen, respectivament. Agrupa especies per al calcul de \a WPGMA.
 	*/
 	map<string, string> map_especies;
 
