@@ -4,6 +4,8 @@
 */
 #pragma once
 #include <map>
+#include <iostream>
+using namespace std;
 
 /**
 	*\class Cjt_Especies Cjt_Especies.hh 
@@ -12,15 +14,14 @@
 class Cjt_Especies
 {
 	/**
-		*\brief Funció constructora de la clase Cjt_Especies.
+		*\brief Funció constructora de la clasee Cjt_Especies.
 		*\short La funció recull el valor inicial de la \a k de l'algoritme \a kmer, i inicialitza el mapa d'especies (posteriorment explicat) en un mapa buit.
 	*/
-	Cjt_Especies::Cjt_Especies() {
-		cin >> kmer_value;
-	}
-	Cjt_Especies::~Cjt_Especies() {
-
-	}
+	Cjt_Especies::Cjt_Especies();
+	/**
+		*\brief Funció destructora de la classe	Cjt_Especies.
+	*/
+	Cjt_Especies::~Cjt_Especies();
 private:
 	/**
 		*\short Valor de \a k per a calcular distancies.
@@ -88,15 +89,21 @@ public:
 	void Cjt_Especies::buida_cjt_especies();
 
 	/**
+		\brief Comproba si l'element donat esta al conjunt.
+		\note Aquesta funcio no pot ser cridada per l'usuari. Es d'us auxiliar.
+		\pre Found = false.
+		\post Found si existeix l'element al conjunt, !Found si no existeix.
+		\param bool found Boolea per referencia.
+		\param string id Identificador de l'especie a evaluar per referencia constant.
+	*/
+	void Cjt_Especies::esta_al_conjunt(bool& found,const string& id);
+
+	/**
 		*\brief Llegeix i omple un conjunt d'n especies.
 		*\pre Cert
 		*\post S'han llegit n parells d'identificadors i gens (Especies) pel canal estandard d'entrada i s'han introduit al conjunt buit.
+		*\param int n Enter n per referencia
 	*/
-	void Cjt_Especies::lee_cjt_especies();
-
-
-
-
-
+	void Cjt_Especies::lee_cjt_especies(int& n);
 };
 
