@@ -1,2 +1,2 @@
-.opendb
-.db
+*.db
+*.opendb
