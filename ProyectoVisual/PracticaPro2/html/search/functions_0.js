@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['buida_5fcjt_5fespecies_13',['buida_cjt_especies',['../class_cjt___especies.html#a2ff738e88ea8e90fd21db3a05cf91007',1,'Cjt_Especies']]]
+  ['cjt_5fespecies_23',['Cjt_Especies',['../class_cjt___especies.html#ae423b9d5a456158136c17d9210c90c2e',1,'Cjt_Especies']]],
+  ['crea_5fespecie_24',['Crea_especie',['../class_cjt___especies.html#aac7c492779aa6e747929ad64d3420616',1,'Cjt_Especies']]]
 ];

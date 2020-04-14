@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['distancia_4',['distancia',['../class_cjt___especies.html#aabf8800d05035c8ae073b789fd0c3e42',1,'Cjt_Especies']]]
+  ['distancia_6',['Distancia',['../class_cjt___especies.html#abb7b2c728df115d2bd8b8f77e53cd931',1,'Cjt_Especies']]]
 ];

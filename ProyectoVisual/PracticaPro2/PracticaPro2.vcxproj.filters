@@ -24,6 +24,12 @@
     <ClCompile Include="Cjt_Especies.cc">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="Cjt_Clusters.cc">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cc">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Especie.hh">
@@ -32,5 +38,16 @@
     <ClInclude Include="Cjt_Especies.hh">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="Cjt_Clusters.hh">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="BinTree.hh">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="DoxyHelp.txt">
+      <Filter>Archivos de recursos</Filter>
+    </Text>
   </ItemGroup>
 </Project>

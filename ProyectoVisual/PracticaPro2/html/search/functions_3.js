@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['elimina_5fespecie_16',['elimina_especie',['../class_cjt___especies.html#aef76f607ead23a635d7a8b2c9a844327',1,'Cjt_Especies']]],
-  ['existeix_5fespecie_17',['existeix_especie',['../class_cjt___especies.html#a703b8dc46bc5664cb0fb7ebf2c856f56',1,'Cjt_Especies']]]
+  ['imprimeix_5fclusters_29',['Imprimeix_clusters',['../class_cjt___clusters.html#af47dec6aad57d953befe5dd7d9fc1ce3',1,'Cjt_Clusters']]],
+  ['imprimeix_5ftaula_5fdistancies_30',['Imprimeix_taula_distancies',['../class_cjt___especies.html#af5610671b9693fd0a151c4cfd3abda41',1,'Cjt_Especies']]],
+  ['inicialitza_5fclusters_31',['Inicialitza_clusters',['../class_cjt___clusters.html#ad211749b3555e2e863aece01759e0b2e',1,'Cjt_Clusters']]]
 ];
