@@ -63,7 +63,7 @@ public:
 		*\pre Cert.
 		*\post S'ha escrit pel canal estandard de sortida l'arbre resultant de l'algorisme WPGMA amb el Cjt_Especies actual.
 	*/
-	Cjt_Clusters::Imprimeix_arbre_filogenetic()
+	Cjt_Clusters::Imprimeix_arbre_filogenetic();
 
 };
 
