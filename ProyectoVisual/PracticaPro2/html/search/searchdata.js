@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "bcdeilo~",
+  0: "bcdegilmo~",
   1: "bc",
-  2: "ce",
-  3: "cdeilo~"
+  2: "cm",
+  3: "cdegilo~"
 };
 
 var indexSectionNames =
@@ -16,9 +16,9 @@ var indexSectionNames =
 
 var indexSectionLabels =
 {
-  0: "All",
+  0: "Tot",
   1: "Classes",
-  2: "Files",
-  3: "Functions"
+  2: "Fitxers",
+  3: "Funcions"
 };
 

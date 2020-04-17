@@ -106,6 +106,7 @@ void Cjt_Especies::Imprimeix_cjt_especies() {
 	for (map<string, string>::iterator it = map_especies.begin(); it != map_especies.end(); ++it) {
 		cout << it->first << " " << it->second << endl;
 	}
+}
 
 void Cjt_Especies::Afegir_element_taula_distancies(const string& id)
 {

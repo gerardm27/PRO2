@@ -1,16 +1,6 @@
-#include <iostream>
-#include <string>
-#include "Cjt_Especies.hh"
-#include "Cjt_Clusters.hh"
-using namespace std;
+#include "main.hh"
 
-/**
-	\brief Gestiona l'input rebut
-*/
-void gestiona_input();
-
-int main()
-{
+int main(){
 		gestiona_input();
 }
 

@@ -21,12 +21,15 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
+{text:"Pàgina principal",url:"index.html"},
 {text:"Classes",url:"annotated.html",children:[
-{text:"Class List",url:"annotated.html"},
-{text:"Class Index",url:"classes.html"},
-{text:"Class Members",url:"functions.html",children:[
-{text:"All",url:"functions.html"},
-{text:"Functions",url:"functions_func.html"}]}]},
-{text:"Files",url:"files.html",children:[
-{text:"File List",url:"files.html"}]}]}
+{text:"Llista de Classes",url:"annotated.html"},
+{text:"Índex de Classes",url:"classes.html"},
+{text:"Membres de Classes",url:"functions.html",children:[
+{text:"Tot",url:"functions.html"},
+{text:"Funcions",url:"functions_func.html"}]}]},
+{text:"Fitxers",url:"files.html",children:[
+{text:"Llista dels Fitxers",url:"files.html"},
+{text:"Membres de Fitxers",url:"globals.html",children:[
+{text:"Tot",url:"globals.html"},
+{text:"Funcions",url:"globals_func.html"}]}]}]}

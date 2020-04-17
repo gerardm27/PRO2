@@ -37,7 +37,7 @@ private:
 		*\pre Cert
 		*\post S'ha buidat el conjunt d'especies.
 	*/
-	void Cjt_Especies::Buida_cjt_especies();
+	void Buida_cjt_especies();
 
 	/**
 		*\brief Afegeix un element a la taula.
@@ -45,7 +45,7 @@ private:
 		*\post S'ha afegit un element a la taula de distancies.
 		*\param string id Identificador de l'element a afegir per referencia constant.
 	*/
-	void Cjt_Especies::Afegir_element_taula_distancies(const string& id);
+	void Afegir_element_taula_distancies(const string& id);
 
 	/**
 		*\brief Separa el gen en kmer_value chars.
@@ -53,7 +53,7 @@ private:
 		*\post S'ha re-estructurat l'string en grups de kmer_value chars.
 		*\param string gen Gen de l'element a re-estructurar.
 	*/
-	set<string> Cjt_Especies::Calcular_kmer(string gen);
+	set<string> Calcular_kmer(string gen);
 
 	/**
 	\brief Comproba si l'element donat esta al conjunt.
@@ -63,17 +63,17 @@ private:
 	\param bool found Boolea per referencia.
 	\param string id Identificador de l'especie a evaluar per referencia constant.
 	*/
-	void Cjt_Especies::Esta_al_conjunt(bool& found, const string& id);
+	void Esta_al_conjunt(bool& found, const string& id);
 
 public:
 
 	/**
-		*\brief Funció constructora de la clasee Cjt_Especies.
-		*\short La funció recull el valor inicial de la \a k de l'algoritme \a kmer, i inicialitza el mapa d'especies (posteriorment explicat) en un mapa buit.
+		*\brief Funcio constructora de la clasee Cjt_Especies.
+		*\short La funcio recull el valor inicial de la \a k de l'algoritme \a kmer, i inicialitza el mapa d'especies ( map_especies ) en un mapa buit.
 	*/
 	Cjt_Especies();
 	/**
-		*\brief Funció destructora de la classe	Cjt_Especies.
+		*\brief Funcio destructora de la classe	Cjt_Especies.
 	*/
 	~Cjt_Especies();
 	
@@ -85,7 +85,7 @@ public:
 		*\param string id Identificador de l'especie.
 		*\param string gen Gen de l'especie.
 	*/
-	void Cjt_Especies::Crea_especie(const string& id,const string& gen);
+	void Crea_especie(const string& id,const string& gen);
 	
 	/**
 		*\brief Imprimeix el gen d'un identificador donat.
@@ -94,7 +94,7 @@ public:
 		*\post S'ha escrit el gen associat a l'identificador pel canal estandard de sortida.
 		*\param string id Identificador a associar amb un gen
 	*/
-	void Cjt_Especies::Obtenir_gen(const string& id);
+	void Obtenir_gen(const string& id);
 
 	/**
 		*\brief Imprimeix la distancia entre dues especies donades.
@@ -104,7 +104,7 @@ public:
 		*\param string id1 Identificador de la primera especie.
 		*\param string id2 Identificador de la segona especie.
 	*/
-	void Cjt_Especies::Distancia(const string& id1,const string& id2);
+	void Distancia(const string& id1,const string& id2);
 
 	/**
 		*\brief Elimina l'especie del conjunt.
@@ -113,7 +113,7 @@ public:
 		*\post S'ha eliminat l'especie del conjunt.
 		*\param string id Identificador de l'especie a eliminar.
 	*/
-	void Cjt_Especies::Elimina_especie(const string& id);
+	void Elimina_especie(const string& id);
 
 	/**
 		*\brief Imprimeix si exiteix l'especie donada.
@@ -121,7 +121,7 @@ public:
 		*\post S'ha escrit si existeix o no l'especie donada pel canal estandard de sortida.
 		*\param string id Identificador de l'especie a evaluar.
 	*/
-	void Cjt_Especies::Existeix_especie(const string& id);
+	void Existeix_especie(const string& id);
 
 	/**
 		*\brief Llegeix i omple un conjunt d'n especies.
@@ -129,7 +129,7 @@ public:
 		*\post S'han llegit n parells d'identificadors i gens (Especies) pel canal estandard d'entrada i s'han introduit al conjunt buit.
 		*\param int n Enter n per referencia
 	*/
-	void Cjt_Especies::Llegeix_cjt_especies(int& n);
+	void Llegeix_cjt_especies(int& n);
 
 	/**
 		*\brief Imprimeix el conjunt d'especies.
@@ -137,7 +137,7 @@ public:
 		*\post S'ha escrit pel canal estandard de sortida.
 		*\note Si el conjunt es buit, no s'escriura res.
 	*/
-	void Cjt_Especies::Imprimeix_cjt_especies()
+	void Imprimeix_cjt_especies();
 	
 	/**
 		*\brief Imprimeix la taula de distancies

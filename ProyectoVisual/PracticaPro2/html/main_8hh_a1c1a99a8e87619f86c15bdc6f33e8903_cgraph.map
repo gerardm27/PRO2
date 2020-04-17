@@ -1,0 +1,15 @@
+<map id="gestiona_input" name="gestiona_input">
+<area shape="rect" id="node1" title="Gestiona l&#39;input rebut." alt="" coords="5,359,112,386"/>
+<area shape="rect" id="node2" href="$class_cjt___especies.html#aac7c492779aa6e747929ad64d3420616" title="Crea una especie i la afegeix al conjunt." alt="" coords="181,5,316,47"/>
+<area shape="rect" id="node3" href="$class_cjt___especies.html#abb7b2c728df115d2bd8b8f77e53cd931" title="Imprimeix la distancia entre dues especies donades." alt="" coords="168,71,329,98"/>
+<area shape="rect" id="node4" href="$class_cjt___especies.html#a3d086b91aff0c657d11733745ce3e1de" title="Elimina l&#39;especie del conjunt." alt="" coords="173,123,324,164"/>
+<area shape="rect" id="node5" href="$class_cjt___clusters.html#a90979d9bf110fe4be32fc29ed91d9007" title="Executa un pas de l&#39;algorisme WPGMA." alt="" coords="174,188,323,229"/>
+<area shape="rect" id="node6" href="$class_cjt___especies.html#ab97a37a24ff3f7b33ed9f7aa2122ed82" title="Imprimeix si exiteix l&#39;especie donada." alt="" coords="171,253,326,295"/>
+<area shape="rect" id="node7" href="$class_cjt___clusters.html#ae7027b606fcab665c8e4fc7dc551468d" title="Imprimeix l&#39;arbre resultant de tot l&#39;algorisme WPGMA." alt="" coords="170,319,327,360"/>
+<area shape="rect" id="node8" href="$class_cjt___especies.html#abfeceb8357985a8fa7a11c02fc9bd559" title="Imprimeix el conjunt d&#39;especies." alt="" coords="167,384,330,425"/>
+<area shape="rect" id="node9" href="$class_cjt___clusters.html#a9d642567cf56394781e61c3905a421ca" title="Donat un identificador, imprimeix l&#39;arbre corresponent." alt="" coords="170,449,327,491"/>
+<area shape="rect" id="node10" href="$class_cjt___especies.html#af5610671b9693fd0a151c4cfd3abda41" title="Imprimeix la taula de distancies." alt="" coords="167,515,330,556"/>
+<area shape="rect" id="node11" href="$class_cjt___clusters.html#a3682cb528a47528ed436b2f0c54b6ab6" title="Inicialitza el conjunt de clusters." alt="" coords="171,580,326,621"/>
+<area shape="rect" id="node12" href="$class_cjt___especies.html#a868eef8754ead9d877865669d47bc3a8" title="Llegeix i omple un conjunt d&#39;n especies." alt="" coords="175,645,323,687"/>
+<area shape="rect" id="node13" href="$class_cjt___especies.html#a45f4e1db00eb5a1595f981d88177b14c" title="Imprimeix el gen d&#39;un identificador donat." alt="" coords="160,711,337,738"/>
+</map>

@@ -31,13 +31,13 @@ public:
 
 	/**
 		*\brief Executa un pas de l'algorisme WPGMA.
-		*\warning Salta error si el numero de clusters del conjunt es menor o igual a u.
+		*\warning Salta error si el numero de clusters del conjunt implicit es menor o igual a u.
 		*\pre Cert.
 		*\post S'ha executat un pas de l'algorisme WPGMA.
 		*\param cluster1
 		*\param cluster2
 	*/
-	Cjt_Clusters::Executa_pas_wpgma(cluster1, cluster2);
+	void Executa_pas_wpgma(cluster1, cluster2);
 
 	/**
 		*\brief Inicialitza el conjunt de clusters.
@@ -45,7 +45,7 @@ public:
 		*\post S'ha inicialitzat el Conjunt de clusters amb el Cjt_Especies actual. S'imprimiran els clusters resultants i la taula de distancies corresponent.
 		*\note Si el conjunt es buit, no s'imprimira res.
 	*/
-	Cjt_Clusters::Inicialitza_clusters();
+	void Inicialitza_clusters();
 
 	/**
 		*\brief Donat un identificador, imprimeix l'arbre corresponent.
@@ -54,7 +54,7 @@ public:
 		*\post S'ha escrit pel canal estandard de sortida l'arbre corresponent a l'identificador donat.
 		*\param string id Identificador del cluster per referencia constant.
 	*/
-	Cjt_Clusters::Imprimeix_clusters(const string& id);
+	void Imprimeix_clusters(const string& id);
 
 
 	/**
@@ -63,7 +63,7 @@ public:
 		*\pre Cert.
 		*\post S'ha escrit pel canal estandard de sortida l'arbre resultant de l'algorisme WPGMA amb el Cjt_Especies actual.
 	*/
-	Cjt_Clusters::Imprimeix_arbre_filogenetic();
+	void Imprimeix_arbre_filogenetic();
 
 };
 

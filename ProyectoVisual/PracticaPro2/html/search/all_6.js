@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['obtenir_5fgen_15',['Obtenir_gen',['../class_cjt___especies.html#a45f4e1db00eb5a1595f981d88177b14c',1,'Cjt_Especies']]]
+  ['llegeix_5fcjt_5fespecies_16',['Llegeix_cjt_especies',['../class_cjt___especies.html#a868eef8754ead9d877865669d47bc3a8',1,'Cjt_Especies']]]
 ];

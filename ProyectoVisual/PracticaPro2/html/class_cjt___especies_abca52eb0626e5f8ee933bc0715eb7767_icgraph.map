@@ -1,0 +1,8 @@
+<map id="Cjt_Especies::Esta_al_conjunt" name="Cjt_Especies::Esta_al_conjunt">
+<area shape="rect" id="node1" title="Comproba si l&#39;element donat esta al conjunt." alt="" coords="231,123,365,164"/>
+<area shape="rect" id="node2" href="$class_cjt___especies.html#aac7c492779aa6e747929ad64d3420616" title="Crea una especie i la afegeix al conjunt." alt="" coords="27,5,161,47"/>
+<area shape="rect" id="node3" href="$class_cjt___especies.html#abb7b2c728df115d2bd8b8f77e53cd931" title="Imprimeix la distancia entre dues especies donades." alt="" coords="13,71,175,98"/>
+<area shape="rect" id="node4" href="$class_cjt___especies.html#a3d086b91aff0c657d11733745ce3e1de" title="Elimina l&#39;especie del conjunt." alt="" coords="19,123,169,164"/>
+<area shape="rect" id="node5" href="$class_cjt___especies.html#ab97a37a24ff3f7b33ed9f7aa2122ed82" title="Imprimeix si exiteix l&#39;especie donada." alt="" coords="17,188,171,229"/>
+<area shape="rect" id="node6" href="$class_cjt___especies.html#a45f4e1db00eb5a1595f981d88177b14c" title="Imprimeix el gen d&#39;un identificador donat." alt="" coords="5,254,183,281"/>
+</map>
