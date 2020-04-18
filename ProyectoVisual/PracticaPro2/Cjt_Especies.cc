@@ -25,7 +25,7 @@ void Cjt_Especies::Crea_especie(const string& id, const string& gen) {
 	}
 	//Sino l'afegeix
 	else {
-		map_especies.insert(make_pair(id, gen));
+		map_especies.insert(make_pair(id, Especie(gen)));
 		cout << "S'ha afegit l'especie amb identificador " << id << " i gen " << gen << " al conjunt" << endl;
 		Actualitza_taula_distancies();
 	}
@@ -40,11 +40,11 @@ void Cjt_Especies::Obtenir_gen(const string& id) {
 		throw "what(): No existeix?";
 	}
 	else {
-		cout << "El gen associat a l'identificador " << id << " es: " << map_especies[id] << endl;
+		cout << "El gen associat a l'identificador " << id << " es: " << map_especies[id].Obtenir_gen() << endl;
 	}
 }
 
-void Cjt_Especies::Distancia(const string& id1, const string& id2) {
+double Cjt_Especies::Calcula_distancia(const string& id1, const string& id2) {
 	bool found = false;
 	Esta_al_conjunt(found, id1);
 	//Si no existeix un dels dos, salta exception
@@ -59,7 +59,7 @@ void Cjt_Especies::Distancia(const string& id1, const string& id2) {
 		}
 		//Calcular la distancia entre id1, id2
 		else {
-			
+			return map_especies[id1].Calcula_distancia(id2);
 		}
 	}
 }
@@ -86,11 +86,7 @@ void Cjt_Especies::Existeix_especie(const string& id) {
 }
 
 void Cjt_Especies::Buida_cjt_especies() {
-	map<string, string>::iterator it = map_especies.begin();
-	while (not map_especies.empty()) {
-		map_especies.erase(it);
-		it = map_especies.begin();
-	}
+	map_especies.clear();
 }
 
 void Cjt_Especies::Llegeix_cjt_especies(int& n) {
@@ -98,13 +94,13 @@ void Cjt_Especies::Llegeix_cjt_especies(int& n) {
 	string id, gen;
 	for (int i = 0; i < n; ++i) {
 		cin >> id >> gen;
-		map_especies.insert(make_pair(id, gen));
+		map_especies.insert(make_pair(id, Especie(gen)));
 	}
 }
 
 void Cjt_Especies::Imprimeix_cjt_especies() {
-	for (map<string, string>::iterator it = map_especies.begin(); it != map_especies.end(); ++it) {
-		cout << it->first << " " << it->second << endl;
+	for (map<string, Especie>::iterator it = map_especies.begin(); it != map_especies.end(); ++it) {
+		cout << it->first << " " << it->second.Obtenir_gen() << endl;
 	}
 }
 

@@ -1,5 +1,6 @@
 <map id="Especie.hh" name="Especie.hh">
-<area shape="rect" id="node1" title="Representa una Especie con atributos GEN (una secuencia de simbolos de entre A, C,..." alt="" coords="29,5,116,32"/>
+<area shape="rect" id="node1" title="Representa una Especie amb atributs gen i kmers, on l&#39;ultim agrupa tots els strings de la separacio p..." alt="" coords="69,5,156,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,60,107"/>
 <area shape="rect" id="node3" title=" " alt="" coords="85,80,141,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="165,80,237,107"/>
 </map>

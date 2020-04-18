@@ -1,8 +1,9 @@
 <map id="Cjt_Especies.hh" name="Cjt_Especies.hh">
-<area shape="rect" id="node1" title="Representa un conjunt d&#39;Especies amb atributs kmer_value i map_especies, on l&#39;ultim agrupa totes les ..." alt="" coords="126,5,243,32"/>
+<area shape="rect" id="node1" title="Representa un conjunt d&#39;Especies amb atributs kmer_value i map_especies, on l&#39;ultim agrupa totes les ..." alt="" coords="153,5,270,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,52,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="77,80,133,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="157,80,212,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="237,80,277,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="301,80,373,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="62,155,118,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="155,155,209,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="341,80,381,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="255,155,327,181"/>
+<area shape="rect" id="node7" href="$_especie_8hh.html" title="Representa una Especie amb atributs gen i kmers, on l&#39;ultim agrupa tots els strings de la separacio p..." alt="" coords="128,80,215,107"/>
 </map>

@@ -20,7 +20,7 @@ void gestiona_input() {
 		}
 		else if (comandament == "distancia") {
 			cin >> id1 >> id2;
-			Especies.Distancia(id1, id2);
+			cout << Especies.Calcula_distancia(id1, id2);
 		}
 		else if (comandament == "elimina_especie") {
 			cin >> id1;

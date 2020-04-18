@@ -5,6 +5,7 @@
 #pragma once
 #include "BinTree.hh"
 #include <iostream>
+#include "Cjt_Especies.hh"
 using namespace std;
 
 /**
@@ -17,6 +18,9 @@ class Cjt_Clusters
 private:
 
 	map<?,?> map_clusters;
+	Estructura de Emmagatzematge Arbres;
+	Estructura de Emmagatzematge Distancies;
+
 
 public:
 	/**
@@ -37,7 +41,7 @@ public:
 		*\param cluster1
 		*\param cluster2
 	*/
-	void Executa_pas_wpgma(cluster1, cluster2);
+	void Executa_pas_wpgma();
 
 	/**
 		*\brief Inicialitza el conjunt de clusters.
@@ -45,7 +49,7 @@ public:
 		*\post S'ha inicialitzat el Conjunt de clusters amb el Cjt_Especies actual. S'imprimiran els clusters resultants i la taula de distancies corresponent.
 		*\note Si el conjunt es buit, no s'imprimira res.
 	*/
-	void Inicialitza_clusters();
+	void Inicialitza_clusters(const Cjt_Especies& cjt_esp);
 
 	/**
 		*\brief Donat un identificador, imprimeix l'arbre corresponent.

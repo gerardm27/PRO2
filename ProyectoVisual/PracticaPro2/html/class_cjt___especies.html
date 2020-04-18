@@ -79,7 +79,7 @@ Diagrama de col·laboració per a Cjt_Especies:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_cjt___especies__coll__graph.png" border="0" usemap="#_cjt___especies_coll__map" alt="Collaboration graph"/></div>
 <map name="_cjt___especies_coll__map" id="_cjt___especies_coll__map">
-<area shape="rect" title="Classe de conjunt d&#39;Especies, conte el valor kmer i un mapa d&#39;especies." alt="" coords="5,5,204,215"/>
+<area shape="rect" title="Classe de conjunt d&#39;Especies, conte el valor kmer i un mapa d&#39;especies." alt="" coords="5,5,204,200"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -98,9 +98,6 @@ Mètodes públics</h2></td></tr>
 <tr class="memitem:a45f4e1db00eb5a1595f981d88177b14c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___especies.html#a45f4e1db00eb5a1595f981d88177b14c">Obtenir_gen</a> (const string &amp;id)</td></tr>
 <tr class="memdesc:a45f4e1db00eb5a1595f981d88177b14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprimeix el gen d'un identificador donat.  <a href="class_cjt___especies.html#a45f4e1db00eb5a1595f981d88177b14c">Més...</a><br /></td></tr>
 <tr class="separator:a45f4e1db00eb5a1595f981d88177b14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb7b2c728df115d2bd8b8f77e53cd931"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___especies.html#abb7b2c728df115d2bd8b8f77e53cd931">Distancia</a> (const string &amp;id1, const string &amp;id2)</td></tr>
-<tr class="memdesc:abb7b2c728df115d2bd8b8f77e53cd931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprimeix la distancia entre dues especies donades.  <a href="class_cjt___especies.html#abb7b2c728df115d2bd8b8f77e53cd931">Més...</a><br /></td></tr>
-<tr class="separator:abb7b2c728df115d2bd8b8f77e53cd931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d086b91aff0c657d11733745ce3e1de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___especies.html#a3d086b91aff0c657d11733745ce3e1de">Elimina_especie</a> (const string &amp;id)</td></tr>
 <tr class="memdesc:a3d086b91aff0c657d11733745ce3e1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina l'especie del conjunt.  <a href="class_cjt___especies.html#a3d086b91aff0c657d11733745ce3e1de">Més...</a><br /></td></tr>
 <tr class="separator:a3d086b91aff0c657d11733745ce3e1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -185,55 +182,6 @@ Gràfic de crides a aquesta funció:</div>
 <map name="class_cjt___especies_aac7c492779aa6e747929ad64d3420616_icgraph" id="class_cjt___especies_aac7c492779aa6e747929ad64d3420616_icgraph">
 <area shape="rect" title="Crea una especie i la afegeix al conjunt." alt="" coords="160,5,295,47"/>
 <area shape="rect" href="main_8hh.html#a1c1a99a8e87619f86c15bdc6f33e8903" title="Gestiona l&#39;input rebut." alt="" coords="5,13,112,39"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="abb7b2c728df115d2bd8b8f77e53cd931"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb7b2c728df115d2bd8b8f77e53cd931">&#9670;&nbsp;</a></span>Distancia()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Cjt_Especies::Distancia </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>id1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>id2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Imprimeix la distancia entre dues especies donades. </p>
-<dl class="section warning"><dt>Atenció</dt><dd>Salta error si no existeix una de les especies donades. </dd></dl>
-<dl class="section pre"><dt>Precondició</dt><dd>S'han llegit els identificadors pel canal estandard d'entrada. </dd></dl>
-<dl class="section post"><dt>Postcondició</dt><dd>S'ha escrit la distancia pel canal estandard de sortida. </dd></dl>
-<dl class="params"><dt>Paràmetres</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">string</td><td>id1 Identificador de la primera especie. </td></tr>
-    <tr><td class="paramname">string</td><td>id2 Identificador de la segona especie. </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="dynheader">
-Gràfic de crides a aquesta funció:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_cjt___especies_abb7b2c728df115d2bd8b8f77e53cd931_icgraph.png" border="0" usemap="#class_cjt___especies_abb7b2c728df115d2bd8b8f77e53cd931_icgraph" alt=""/></div>
-<map name="class_cjt___especies_abb7b2c728df115d2bd8b8f77e53cd931_icgraph" id="class_cjt___especies_abb7b2c728df115d2bd8b8f77e53cd931_icgraph">
-<area shape="rect" title="Imprimeix la distancia entre dues especies donades." alt="" coords="160,5,321,32"/>
-<area shape="rect" href="main_8hh.html#a1c1a99a8e87619f86c15bdc6f33e8903" title="Gestiona l&#39;input rebut." alt="" coords="5,5,112,32"/>
 </map>
 </div>
 
@@ -392,11 +340,11 @@ Gràfic de crides a aquesta funció:</div>
 </div><div class="memdoc">
 
 <p>Llegeix i omple un conjunt d'n especies. </p>
-<dl class="section pre"><dt>Precondició</dt><dd>Cert </dd></dl>
+<dl class="section pre"><dt>Precondició</dt><dd>Cert. </dd></dl>
 <dl class="section post"><dt>Postcondició</dt><dd>S'han llegit n parells d'identificadors i gens (Especies) pel canal estandard d'entrada i s'han introduit al conjunt buit. </dd></dl>
 <dl class="params"><dt>Paràmetres</dt><dd>
   <table class="params">
-    <tr><td class="paramname">int</td><td>n Enter n per referencia </td></tr>
+    <tr><td class="paramname">int</td><td>n Enter n per referencia. </td></tr>
   </table>
   </dd>
 </dl>

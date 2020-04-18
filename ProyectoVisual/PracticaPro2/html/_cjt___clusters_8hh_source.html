@@ -70,33 +70,39 @@ $(function() {
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;BinTree.hh&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_cjt___clusters.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cjt___clusters.html">Cjt_Clusters</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    map&lt;?,?&gt; map_clusters;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_cjt___clusters.html">Cjt_Clusters</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ~<a class="code" href="class_cjt___clusters.html">Cjt_Clusters</a>();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> Executa_pas_wpgma(cluster1, cluster2);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> Inicialitza_clusters();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> Imprimeix_clusters(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> Imprimeix_arbre_filogenetic();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_cjt___especies_8hh.html">Cjt_Especies.hh</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_cjt___clusters.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cjt___clusters.html">Cjt_Clusters</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    map&lt;?,?&gt; map_clusters;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Estructura de Emmagatzematge Arbres;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    Estructura de Emmagatzematge Distancies;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="class_cjt___clusters.html">Cjt_Clusters</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ~<a class="code" href="class_cjt___clusters.html">Cjt_Clusters</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> Executa_pas_wpgma();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> Inicialitza_clusters(<span class="keyword">const</span> <a class="code" href="class_cjt___especies.html">Cjt_Especies</a>&amp; cjt_esp);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> Imprimeix_clusters(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> Imprimeix_arbre_filogenetic();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_cjt___clusters_html"><div class="ttname"><a href="class_cjt___clusters.html">Cjt_Clusters</a></div><div class="ttdoc">Classe de conjunt de Clusters, conte un BinTree de clusters.</div><div class="ttdef"><b>Definition:</b> Cjt_Clusters.hh:14</div></div>
+<div class="ttc" id="aclass_cjt___especies_html"><div class="ttname"><a href="class_cjt___especies.html">Cjt_Especies</a></div><div class="ttdoc">Classe de conjunt d'Especies, conte el valor kmer i un mapa d'especies.</div><div class="ttdef"><b>Definition:</b> Cjt_Especies.hh:18</div></div>
+<div class="ttc" id="aclass_cjt___clusters_html"><div class="ttname"><a href="class_cjt___clusters.html">Cjt_Clusters</a></div><div class="ttdoc">Classe de conjunt de Clusters, conte un BinTree de clusters.</div><div class="ttdef"><b>Definition:</b> Cjt_Clusters.hh:15</div></div>
+<div class="ttc" id="a_cjt___especies_8hh_html"><div class="ttname"><a href="_cjt___especies_8hh.html">Cjt_Especies.hh</a></div><div class="ttdoc">Representa un conjunt d'Especies amb atributs kmer_value i map_especies, on l'ultim agrupa totes les ...</div></div>
 <div class="ttc" id="a_cjt___clusters_8hh_html"><div class="ttname"><a href="_cjt___clusters_8hh.html">Cjt_Clusters.hh</a></div><div class="ttdoc">Representa un conjunt de clusters amb l'atribut map_clusters, on aquest agrupa tots els clusters.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

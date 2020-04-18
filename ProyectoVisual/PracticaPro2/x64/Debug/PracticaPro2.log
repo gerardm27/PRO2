@@ -1,72 +1,39 @@
 ﻿  Cjt_Clusters.cc
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,5): error C2143: error de sintaxis: falta ';' delante de '<'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,5): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,23): error C2238: símbolos (token) inesperados delante de ';'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(40,33): error C4596: 'Executa_pas_wpgma': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(40,42): error C2061: error de sintaxis: identificador 'cluster1'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(40,53): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(40,53): warning C4183: 'Executa_pas_wpgma': falta el tipo de valor devuelto; se supone que se trata de una función miembro que devuelve 'int'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(48,36): error C4596: 'Inicialitza_clusters': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(48,38): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(48,38): warning C4183: 'Inicialitza_clusters': falta el tipo de valor devuelto; se supone que se trata de una función miembro que devuelve 'int'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(57,34): error C4596: 'Imprimeix_clusters': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(57,52): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(57,52): warning C4183: 'Imprimeix_clusters': falta el tipo de valor devuelto; se supone que se trata de una función miembro que devuelve 'int'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(66,43): error C4596: 'Imprimeix_arbre_filogenetic': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(66,45): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(66,45): warning C4183: 'Imprimeix_arbre_filogenetic': falta el tipo de valor devuelto; se supone que se trata de una función miembro que devuelve 'int'
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,6): error C2059: error de sintaxis: '?'
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,16): error C3646: 'de': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,37): error C3646: 'Arbres': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,37): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,16): error C3646: 'de': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,41): error C3646: 'Distancies': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,41): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
   Cjt_Especies.cc
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(40,39): error C4596: 'Buida_cjt_especies': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(48,52): error C4596: 'Afegir_element_taula_distancies': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(56,41): error C4596: 'Calcular_kmer': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(66,36): error C4596: 'Esta_al_conjunt': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(88,33): error C4596: 'Crea_especie': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(97,32): error C4596: 'Obtenir_gen': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(107,30): error C4596: 'Distancia': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(116,36): error C4596: 'Elimina_especie': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(124,37): error C4596: 'Existeix_especie': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(132,41): error C4596: 'Llegeix_cjt_especies': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(140,43): error C4596: 'Imprimeix_cjt_especies': nombre completo no válido en la declaración de miembro
 C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(30,3): error C3861: 'Actualitza_taula_distancies': no se encontró el identificador
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(111,1): error C2601: 'Cjt_Especies::Afegir_element_taula_distancies': las definiciones de funciones locales no son válidas
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(105): message : esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(115,49): error C2601: 'Cjt_Especies::Imprimeix_taula_distancies': las definiciones de funciones locales no son válidas
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(105): message : esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(119,53): error C2601: 'Cjt_Especies::Calcular_kmer': las definiciones de funciones locales no son válidas
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(105): message : esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(134,22): error C2039: 'CalcularDistancia': no es un miembro de 'Cjt_Especies'
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(121,23): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(135,22): error C2039: 'CalcularDistancia': no es un miembro de 'Cjt_Especies'
 C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(17): message : vea la declaración de 'Cjt_Especies'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(134,66): error C2601: 'CalcularDistancia': las definiciones de funciones locales no son válidas
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(105): message : esta línea contiene un elemento '{' y no se ha encontrado su elemento de cierre
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(105): fatal error C1075: "{": no se encontró ningún token coincidente
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(138,23): error C3861: 'Calcular_kmer': no se encontró el identificador
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(139,23): error C3861: 'Calcular_kmer': no se encontró el identificador
+  Especie.cc
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Especie.hh(11,8): error C2143: error de sintaxis: falta ';' delante de '<'
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Especie.hh(11,8): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Especie.hh(13,7): error C2334: símbolos (token) inesperados delante de ':'; se pasará por alto el cuerpo de función aparente
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Especie.cc(2,1): fatal error C1004: se encontró un final de archivo no esperado
   main.cc
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(40,39): error C4596: 'Buida_cjt_especies': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(48,52): error C4596: 'Afegir_element_taula_distancies': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(56,41): error C4596: 'Calcular_kmer': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(66,36): error C4596: 'Esta_al_conjunt': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(88,33): error C4596: 'Crea_especie': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(97,32): error C4596: 'Obtenir_gen': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(107,30): error C4596: 'Distancia': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(116,36): error C4596: 'Elimina_especie': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(124,37): error C4596: 'Existeix_especie': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(132,41): error C4596: 'Llegeix_cjt_especies': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(140,43): error C4596: 'Imprimeix_cjt_especies': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,6): error C2059: error de sintaxis: '?'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(40,33): error C4596: 'Executa_pas_wpgma': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(40,42): error C2061: error de sintaxis: identificador 'cluster1'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(40,53): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(40,53): warning C4183: 'Executa_pas_wpgma': falta el tipo de valor devuelto; se supone que se trata de una función miembro que devuelve 'int'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(48,36): error C4596: 'Inicialitza_clusters': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(48,38): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(48,38): warning C4183: 'Inicialitza_clusters': falta el tipo de valor devuelto; se supone que se trata de una función miembro que devuelve 'int'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(57,34): error C4596: 'Imprimeix_clusters': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(57,52): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(57,52): warning C4183: 'Imprimeix_clusters': falta el tipo de valor devuelto; se supone que se trata de una función miembro que devuelve 'int'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(66,43): error C4596: 'Imprimeix_arbre_filogenetic': nombre completo no válido en la declaración de miembro
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(66,45): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(66,45): warning C4183: 'Imprimeix_arbre_filogenetic': falta el tipo de valor devuelto; se supone que se trata de una función miembro que devuelve 'int'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\main.cc(59,31): error C2065: 'cluster1': identificador no declarado
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\main.cc(59,41): error C2065: 'cluster2': identificador no declarado
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,6): error C2059: error de sintaxis: '?'
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,16): error C3646: 'de': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,37): error C3646: 'Arbres': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,37): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,16): error C3646: 'de': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,41): error C3646: 'Distancies': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,41): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\main.cc(45,34): error C2660: 'Cjt_Clusters::Inicialitza_clusters': la función no acepta 0 argumentos
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(52,7): message : vea la declaración de 'Cjt_Clusters::Inicialitza_clusters'
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\main.cc(48,31): error C2065: 'cluster1': identificador no declarado
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\main.cc(48,41): error C2065: 'cluster2': identificador no declarado
   PracticaPro2.cpp
 c1xx : fatal error C1083: No se puede abrir el archivo origen: 'PracticaPro2.cpp': No such file or directory
   Generando código...

@@ -1,0 +1,6 @@
+<map id="Especie.hh" name="Especie.hh">
+<area shape="rect" id="node1" title="Representa una Especie amb atributs gen i kmers, on l&#39;ultim agrupa tots els strings de la separacio p..." alt="" coords="64,5,151,32"/>
+<area shape="rect" id="node2" href="$_cjt___especies_8hh.html" title="Representa un conjunt d&#39;Especies amb atributs kmer_value i map_especies, on l&#39;ultim agrupa totes les ..." alt="" coords="49,80,166,107"/>
+<area shape="rect" id="node3" href="$_cjt___clusters_8hh.html" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, on aquest agrupa tots els clusters." alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node4" href="$main_8hh.html" title="Controla el programa." alt="" coords="73,229,141,256"/>
+</map>

@@ -8,6 +8,7 @@
 #include <string>
 #include <set>
 #include <iostream>
+#include "Especie.hh"
 using namespace std;
 
 /**
@@ -22,9 +23,9 @@ private:
 	*/
 	int kmer_value;
 	/** 
-		*\short Mapa d'especies amb \a identificador i \a gen, respectivament. Agrupa especies per al calcul de \a WPGMA.
+		*\short Mapa d'especies amb \a identificador i \a Especie, respectivament. Agrupa especies per al calcul de \a WPGMA.
 	*/
-	map<string, string> map_especies;
+	map<string, Especie> map_especies;
 
 	/**
 		*\short Taula de distancies amb Identificador i Vector de distancies.
@@ -46,14 +47,6 @@ private:
 		*\param string id Identificador de l'element a afegir per referencia constant.
 	*/
 	void Afegir_element_taula_distancies(const string& id);
-
-	/**
-		*\brief Separa el gen en kmer_value chars.
-		*\pre S'ha llegit un string gen pel canal estandard d'entrada.
-		*\post S'ha re-estructurat l'string en grups de kmer_value chars.
-		*\param string gen Gen de l'element a re-estructurar.
-	*/
-	set<string> Calcular_kmer(string gen);
 
 	/**
 	\brief Comproba si l'element donat esta al conjunt.
@@ -85,7 +78,7 @@ public:
 		*\param string id Identificador de l'especie.
 		*\param string gen Gen de l'especie.
 	*/
-	void Crea_especie(const string& id,const string& gen);
+	void Crea_especie(const string& id, const string& gen);
 	
 	/**
 		*\brief Imprimeix el gen d'un identificador donat.
@@ -95,16 +88,15 @@ public:
 		*\param string id Identificador a associar amb un gen
 	*/
 	void Obtenir_gen(const string& id);
-
+	
 	/**
-		*\brief Imprimeix la distancia entre dues especies donades.
-		*\warning Salta error si no existeix una de les especies donades.
-		*\pre S'han llegit els identificadors pel canal estandard d'entrada.
-		*\post S'ha escrit la distancia pel canal estandard de sortida.
-		*\param string id1 Identificador de la primera especie.
-		*\param string id2 Identificador de la segona especie.
+		*\brief Calcula la distancia entre les dues especies.
+		*\pre Cert.
+		*\post S'ha retornat la distancia entre les dues especies donades.
+		*\param string id1 Identificador de la primera especie per referencia constant.
+		*\param string id2 Identificador de la segona especie per referencia constant.
 	*/
-	void Distancia(const string& id1,const string& id2);
+	double Calcula_distancia(const string& id1, const string& id2);
 
 	/**
 		*\brief Elimina l'especie del conjunt.
@@ -125,9 +117,9 @@ public:
 
 	/**
 		*\brief Llegeix i omple un conjunt d'n especies.
-		*\pre Cert
+		*\pre Cert.
 		*\post S'han llegit n parells d'identificadors i gens (Especies) pel canal estandard d'entrada i s'han introduit al conjunt buit.
-		*\param int n Enter n per referencia
+		*\param int n Enter n per referencia.
 	*/
 	void Llegeix_cjt_especies(int& n);
 
