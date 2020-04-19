@@ -10,6 +10,7 @@ Especie::~Especie()
 {
 	
 }
+int Especie::k;
 
 string Especie::Obtenir_gen()
 {
@@ -18,12 +19,9 @@ string Especie::Obtenir_gen()
 
 void Especie::Calcula_kmer(map<string,int>& map_kmers)
 {
-	int kmer_value = Get_kmer();
-	int counter = 0;
 	string aux;
-	for (int i = 0; i < gen.size() - kmer_value; ++i) {
-		aux.append(gen.begin()+counter, gen.begin()+counter+kmer_value);
-		counter++;
+	for (int i = 0; i <= gen.size() - k; ++i) {
+		aux.append(gen.begin()+i, gen.begin()+i+k);
 		if (map_kmers.find(aux) == map_kmers.end()) {
 			map_kmers.insert(make_pair(aux, 1));
 		}
@@ -36,20 +34,22 @@ void Especie::Calcula_kmer(map<string,int>& map_kmers)
 double Especie::Calcula_distancia(Especie& e2)
 {
 	map<string, int> map_kmers_2 = e2.map_kmers;
-	int unio, interseccio;
+	double unio = 0;
+	double interseccio = 0;
 	for (map<string, int>::iterator it = map_kmers.begin(); it != map_kmers.end(); ++it) {
-		if (map_kmers_2.find(it->first) != map_kmers_2.end()) {
-			if (it->second == map_kmers_2.find(it->first)->second) {
+		map<string, int>::iterator it2 = map_kmers_2.find(it->first);
+		if (it2 != map_kmers_2.end()) {
+			if (it->second == it2->second) {
 				interseccio += it->second;
 				unio += it->second;
 			}
-			else if (it->second > map_kmers_2.find(it->first)->second) {
-				interseccio += map_kmers_2.find(it->first)->second;
+			else if (it->second > it2->second) {
+				interseccio += it2->second;
 				unio += it->second;
 			}
 			else {
 				interseccio += it->second;
-				unio += map_kmers_2.find(it->first)->second;
+				unio += it2->second;
 			}
 			map_kmers_2.erase(it->first);
 		}
@@ -62,5 +62,12 @@ double Especie::Calcula_distancia(Especie& e2)
 		unio += it->second;
 	}
 	return ((1 - (interseccio / unio)) * 100);
+}
+
+void Especie::Canviar_k(int valor)
+{
+	if (k == 0) {
+		k = valor;
+	}
 }
 

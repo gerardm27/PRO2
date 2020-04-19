@@ -5,7 +5,6 @@
 #pragma once
 #include <string>
 #include <map>
-#include <vector>
 #include <iostream>
 using namespace std;
 class Especie
@@ -13,14 +12,7 @@ class Especie
 private:
 	string gen;
 	map<string,int> map_kmers;
-	/**
-		*\brief Separa el gen en kmer_value chars.
-		*\pre S'ha llegit un string gen pel canal estandard d'entrada.
-		*\post S'ha re-estructurat l'string en grups de kmer_value chars.
-		*\param string gen Gen de l'element a re-estructurar.
-	*/
-	//set<string> Calcular_kmer(string gen);
-
+	
 	/**
 		*\brief Calcula els kmer d'un gen d'una especie.
 		*\pre Cert.
@@ -28,6 +20,7 @@ private:
 		*\param map<string,int> map_kmers Mapa de kmers resultant per referencia.
 	*/
 	void Calcula_kmer(map<string,int>& map_kmers);
+	static int k;
 
 public: 
 	/**
@@ -58,6 +51,15 @@ public:
 		*\param Especie e2 Segona especie a calcula per referencia.
 	*/
 	double Calcula_distancia(Especie &e2);
+
+	/**
+		*\brief S'utilitza per a obtenir el valor de k.
+		*\pre Cert.
+		*\post S'ha afegit el valor de k del programa.
+		*\param int valor Valor de k.
+		*\note Funcio auxiliar.
+	*/
+	static void Canviar_k(int valor);
 
 	
 

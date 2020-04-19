@@ -1,6 +1,6 @@
 /** 
 	*\file Cjt_Especies.hh
-	*\brief Representa un conjunt d'Especies amb atributs \b kmer_value i \b map_especies, on l'ultim agrupa totes les especies.
+	*\brief Representa un conjunt d'Especies amb atribut \b map_especies, on s'agrupen totes les especies.
 */
 #pragma once
 #include <map>
@@ -9,15 +9,11 @@
 
 /**
 	*\class Cjt_Especies Cjt_Especies.hh 
-	*\brief Classe de conjunt d'Especies, conte el valor \a kmer i un <em>mapa d'especies</em>.
+	*\brief Classe de conjunt d'Especies, conte un <em>mapa d'especies</em>.
 */
 class Cjt_Especies
 {
 private:
-	/**
-		*\short Valor de \a k per a calcular distancies.
-	*/
-	int kmer_value;
 	/** 
 		*\short Mapa d'especies amb \a identificador i \a Especie, respectivament. Agrupa especies per al calcul de \a WPGMA.
 	*/
@@ -53,25 +49,16 @@ private:
 	\param string id Identificador de l'especie a evaluar per referencia constant.
 	*/
 	void Esta_al_conjunt(bool& found, const string& id);
-
 public:
 	
 	/**
 		*\brief Funcio constructora de la clasee Cjt_Especies.
-		*\short La funcio recull el valor inicial de la \a k de l'algoritme \a kmer, i inicialitza el mapa d'especies ( map_especies ) en un mapa buit.
 	*/
 	Cjt_Especies();
 	/**
 		*\brief Funcio destructora de la classe	Cjt_Especies.
 	*/
 	~Cjt_Especies();
-
-	/**
-		*\brief Funcio per obtenir el kmer_value.
-		*\pre Cert.
-		*\post S'ha retornat el kmer_value.
-	*/
-	int Get_kmer();
 	
 	/**
 		*\brief Crea una especie i la afegeix al conjunt.

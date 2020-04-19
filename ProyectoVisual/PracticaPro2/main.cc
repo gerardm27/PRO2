@@ -5,6 +5,11 @@ int main(){
 }
 
 void gestiona_input() {
+	//Obtenir la k.
+	int valor;
+	cin >> valor;
+	Especie::Canviar_k(valor);
+
 	string comandament, id1, id2, gen;
 	Cjt_Especies Especies;
 	Cjt_Clusters Clusters;
