@@ -1,39 +1,80 @@
 ﻿  Cjt_Clusters.cc
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,6): error C2059: error de sintaxis: '?'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,16): error C3646: 'de': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,37): error C3646: 'Arbres': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,37): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,16): error C3646: 'de': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,41): error C3646: 'Distancies': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,41): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(18,6): error C2059: error de sintaxis: '?'
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,16): error C3646: 'de': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,37): error C3646: 'Arbres': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,37): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,16): error C3646: 'de': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,41): error C3646: 'Distancies': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,41): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
   Cjt_Especies.cc
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(30,3): error C3861: 'Actualitza_taula_distancies': no se encontró el identificador
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(121,23): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(135,22): error C2039: 'CalcularDistancia': no es un miembro de 'Cjt_Especies'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(17): message : vea la declaración de 'Cjt_Especies'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(138,23): error C3861: 'Calcular_kmer': no se encontró el identificador
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(139,23): error C3861: 'Calcular_kmer': no se encontró el identificador
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\tuple(974,62): error C2512: 'Especie::Especie': no hay disponible un constructor predeterminado adecuado
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\tuple(981): message : Vea la referencia a la creación de una instancia de la función plantilla "std::pair<const std::string,Especie>::pair<std::tuple<const std::string &>,std::tuple<>,0,>(_Tuple1 &,_Tuple2 &,std::integer_sequence<unsigned __int64,0>,std::integer_sequence<unsigned __int64>)" que se está compilando
+          with
+          [
+              _Tuple1=std::tuple<const std::string &>,
+              _Tuple2=std::tuple<>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\tuple(981): message : Vea la referencia a la creación de una instancia de la función plantilla "std::pair<const std::string,Especie>::pair<std::tuple<const std::string &>,std::tuple<>,0,>(_Tuple1 &,_Tuple2 &,std::integer_sequence<unsigned __int64,0>,std::integer_sequence<unsigned __int64>)" que se está compilando
+          with
+          [
+              _Tuple1=std::tuple<const std::string &>,
+              _Tuple2=std::tuple<>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xmemory(670): message : Vea la referencia a la creación de una instancia de la función plantilla "std::pair<const std::string,Especie>::pair<const std::string&,>(std::piecewise_construct_t,std::tuple<const std::string &>,std::tuple<>)" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xmemory(671): message : Vea la referencia a la creación de una instancia de la función plantilla "std::pair<const std::string,Especie>::pair<const std::string&,>(std::piecewise_construct_t,std::tuple<const std::string &>,std::tuple<>)" que se está compilando
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xtree(805): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const std::piecewise_construct_t&,std::tuple<const std::string &>,std::tuple<>>(_Alloc &,_Objty *const ,const std::piecewise_construct_t &,std::tuple<const std::string &> &&,std::tuple<> &&)" que se está compilando
+          with
+          [
+              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,Especie>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,Especie>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,Especie>,
+              _Objty=std::pair<const std::string,Especie>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\xtree(806): message : Vea la referencia a la creación de una instancia de la función plantilla "void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const std::piecewise_construct_t&,std::tuple<const std::string &>,std::tuple<>>(_Alloc &,_Objty *const ,const std::piecewise_construct_t &,std::tuple<const std::string &> &&,std::tuple<> &&)" que se está compilando
+          with
+          [
+              _Alloc=std::allocator<std::_Tree_node<std::pair<const std::string,Especie>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,Especie>>>::void_pointer>>,
+              _Ty=std::pair<const std::string,Especie>,
+              _Objty=std::pair<const std::string,Especie>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\map(175): message : Vea la referencia a la creación de una instancia de la función plantilla "std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<const std::string,Especie>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>::_Tree_temp_node<const std::piecewise_construct_t&,std::tuple<const std::string &>,std::tuple<>>(_Alnode &,std::_Tree_node<std::pair<const std::string,Especie>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,const std::piecewise_construct_t &,std::tuple<const std::string &> &&,std::tuple<> &&)" que se está compilando
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,Especie>>,
+              _Alnode=std::allocator<std::_Tree_node<std::pair<const std::string,Especie>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,Especie>>>::void_pointer>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\map(184): message : Vea la referencia a la creación de una instancia de la función plantilla "std::_Tree_temp_node<std::allocator<std::_Tree_node<std::pair<const std::string,Especie>,std::_Default_allocator_traits<_Alloc>::void_pointer>>>::_Tree_temp_node<const std::piecewise_construct_t&,std::tuple<const std::string &>,std::tuple<>>(_Alnode &,std::_Tree_node<std::pair<const std::string,Especie>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,const std::piecewise_construct_t &,std::tuple<const std::string &> &&,std::tuple<> &&)" que se está compilando
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,Especie>>,
+              _Alnode=std::allocator<std::_Tree_node<std::pair<const std::string,Especie>,std::_Default_allocator_traits<std::allocator<std::pair<const std::string,Especie>>>::void_pointer>>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\map(325): message : Vea la referencia a la creación de una instancia de la función plantilla "std::pair<std::_Tree_node<std::pair<const std::string,Especie>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,bool> std::map<std::string,Especie,std::less<std::string>,_Alloc>::_Try_emplace<const std::basic_string<char,std::char_traits<char>,std::allocator<char>>&,>(_Keyty)" que se está compilando
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,Especie>>,
+              _Keyty=const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\map(325): message : Vea la referencia a la creación de una instancia de la función plantilla "std::pair<std::_Tree_node<std::pair<const std::string,Especie>,std::_Default_allocator_traits<_Alloc>::void_pointer> *,bool> std::map<std::string,Especie,std::less<std::string>,_Alloc>::_Try_emplace<const std::basic_string<char,std::char_traits<char>,std::allocator<char>>&,>(_Keyty)" que se está compilando
+          with
+          [
+              _Alloc=std::allocator<std::pair<const std::string,Especie>>,
+              _Keyty=const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include\map(324): message : al compilar la función del miembro clase plantilla "Especie &std::map<std::string,Especie,std::less<std::string>,std::allocator<std::pair<const std::string,Especie>>>::operator [](const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)"
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.cc(47): message : Vea la referencia a la creación de una instancia de la función plantilla "Especie &std::map<std::string,Especie,std::less<std::string>,std::allocator<std::pair<const std::string,Especie>>>::operator [](const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &)" que se está compilando
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Especies.hh(24): message : Vea la referencia a la creación de una instancia de clase plantilla "std::map<std::string,Especie,std::less<std::string>,std::allocator<std::pair<const std::string,Especie>>>" que se está compilando
   Especie.cc
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Especie.hh(11,8): error C2143: error de sintaxis: falta ';' delante de '<'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Especie.hh(11,8): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Especie.hh(13,7): error C2334: símbolos (token) inesperados delante de ':'; se pasará por alto el cuerpo de función aparente
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Especie.cc(2,1): fatal error C1004: se encontró un final de archivo no esperado
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Especie.cc(21,19): error C3861: 'Get_kmer': no se encontró el identificador
   main.cc
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,6): error C2059: error de sintaxis: '?'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,16): error C3646: 'de': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,37): error C3646: 'Arbres': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(21,37): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,16): error C3646: 'de': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,41): error C3646: 'Distancies': especificador de invalidación desconocido
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(22,41): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\main.cc(45,34): error C2660: 'Cjt_Clusters::Inicialitza_clusters': la función no acepta 0 argumentos
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(52,7): message : vea la declaración de 'Cjt_Clusters::Inicialitza_clusters'
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\main.cc(48,31): error C2065: 'cluster1': identificador no declarado
-C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\main.cc(48,41): error C2065: 'cluster2': identificador no declarado
-  PracticaPro2.cpp
-c1xx : fatal error C1083: No se puede abrir el archivo origen: 'PracticaPro2.cpp': No such file or directory
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(18,6): error C2059: error de sintaxis: '?'
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,16): error C3646: 'de': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,37): error C3646: 'Arbres': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(19,37): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,16): error C3646: 'de': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,31): error C3646: 'Emmagatzematge': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,41): error C3646: 'Distancies': especificador de invalidación desconocido
+C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\PracticaPro2\Cjt_Clusters.hh(20,41): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
   Generando código...

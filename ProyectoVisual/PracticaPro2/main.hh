@@ -3,11 +3,13 @@
 	*\brief Controla el programa.
 */
 #pragma once
-#include <iostream>
-#include <string>
-#include "Cjt_Especies.hh"
 #include "Cjt_Clusters.hh"
-using namespace std;
+
+
+/**
+	*\brief Primera funcio que s'executa al programa.
+*/
+int main();
 
 /**
 	*\brief Gestiona l'input rebut.

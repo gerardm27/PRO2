@@ -1,13 +1,13 @@
 <map id="Cjt_Clusters.hh" name="Cjt_Clusters.hh">
-<area shape="rect" id="node1" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, on aquest agrupa tots els clusters." alt="" coords="338,5,449,32"/>
-<area shape="rect" id="node2" href="$_bin_tree_8hh_source.html" title=" " alt="" coords="90,80,174,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="516,229,588,256"/>
-<area shape="rect" id="node6" href="$_cjt___especies_8hh.html" title="Representa un conjunt d&#39;Especies amb atributs kmer_value i map_especies, on l&#39;ultim agrupa totes les ..." alt="" coords="335,80,452,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="99,155,165,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,155,75,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="467,155,514,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="296,229,352,256"/>
-<area shape="rect" id="node9" title=" " alt="" coords="217,229,271,256"/>
-<area shape="rect" id="node10" title=" " alt="" coords="403,155,443,181"/>
-<area shape="rect" id="node11" href="$_especie_8hh.html" title="Representa una Especie amb atributs gen i kmers, on l&#39;ultim agrupa tots els strings de la separacio p..." alt="" coords="241,155,327,181"/>
+<area shape="rect" id="node1" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, on aquest agrupa tots els clusters." alt="" coords="143,5,253,32"/>
+<area shape="rect" id="node2" href="$_bin_tree_8hh_source.html" title=" " alt="" coords="88,80,172,107"/>
+<area shape="rect" id="node5" href="$_cjt___especies_8hh.html" title="Representa un conjunt d&#39;Especies amb atributs kmer_value i map_especies, on l&#39;ultim agrupa totes les ..." alt="" coords="209,80,326,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,71,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="95,155,165,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="189,155,236,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="261,155,301,181"/>
+<area shape="rect" id="node8" href="$_especie_8hh.html" title="Representa una Especie amb atributs gen i kmers, on l&#39;ultim agrupa tots els strings de la separacio p..." alt="" coords="325,155,412,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="261,229,316,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="341,229,397,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="421,229,493,256"/>
 </map>

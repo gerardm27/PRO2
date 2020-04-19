@@ -151,10 +151,8 @@
     <ClCompile Include="Cjt_Especies.cc" />
     <ClCompile Include="Especie.cc" />
     <ClCompile Include="main.cc" />
-    <ClCompile Include="PracticaPro2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BinTree.hh" />
     <ClInclude Include="Cjt_Clusters.hh" />
     <ClInclude Include="Cjt_Especies.hh" />
     <ClInclude Include="Especie.hh" />

@@ -4,8 +4,7 @@ Cjt_Especies::Cjt_Especies() {
 	cin >> kmer_value;
 }
 
-Cjt_Especies::~Cjt_Especies()
-{
+Cjt_Especies::~Cjt_Especies() {
 
 }
 
@@ -14,6 +13,11 @@ void Cjt_Especies::Esta_al_conjunt(bool& found, const string& id) {
 	if (map_especies.find(id) != map_especies.end()) found = true;
 	//Si esta a la ultima+1 (end), no existeix.
 	else found = false;
+}
+
+int Cjt_Especies::Get_kmer()
+{
+	return kmer_value;
 }
 
 void Cjt_Especies::Crea_especie(const string& id, const string& gen) {
@@ -27,7 +31,7 @@ void Cjt_Especies::Crea_especie(const string& id, const string& gen) {
 	else {
 		map_especies.insert(make_pair(id, Especie(gen)));
 		cout << "S'ha afegit l'especie amb identificador " << id << " i gen " << gen << " al conjunt" << endl;
-		Actualitza_taula_distancies();
+		//Actualitza_taula_distancies();
 	}
 }
 
@@ -59,7 +63,7 @@ double Cjt_Especies::Calcula_distancia(const string& id1, const string& id2) {
 		}
 		//Calcular la distancia entre id1, id2
 		else {
-			return map_especies[id1].Calcula_distancia(id2);
+			return map_especies[id1].Calcula_distancia(map_especies[id2]);
 		}
 	}
 }
@@ -89,7 +93,7 @@ void Cjt_Especies::Buida_cjt_especies() {
 	map_especies.clear();
 }
 
-void Cjt_Especies::Llegeix_cjt_especies(int& n) {
+void Cjt_Especies::Llegeix_cjt_especies(const int& n) {
 	Buida_cjt_especies();
 	string id, gen;
 	for (int i = 0; i < n; ++i) {
@@ -112,39 +116,39 @@ void Cjt_Especies::Afegir_element_taula_distancies(const string& id)
 void Cjt_Especies::Imprimeix_taula_distancies() {
 	
 }
- //Corregir i entendre per a mi
-set<string> Cjt_Especies::Calcular_kmer(string gen) {
-	int size = gen.size();
-	set<string> kmer;
-	for (int i = 0; i < (size - kmer_value); ++i) {
-		string kmerAux;
-		for (int j = i; j < i + kmer_value; ++j) {
-			kmerAux += gen[j];
-		}
-		set<string>::const_iterator it = kmer.end();
-		kmer.insert(it, kmerAux);
-	}
-	return kmer;
-}
-
-//Corregir i entendre per a mi
-double Cjt_Especies::CalcularDistancia(string genA, string genB) {
-	double unio = 0;
-	double interseccio = 0;
-	set <string> kmer1 = Calcular_kmer(genA);
-	set <string> kmer2 = Calcular_kmer(genB);
-	for (set<string>::iterator it = kmer1.begin(); it != kmer1.end(); ++it) {
-		set<string>::iterator it2 = kmer2.find(*it);
-		if (it2 != kmer2.end()) {
-			++interseccio;
-			++unio;
-			kmer2.erase(it2);
-		}
-		else {
-			++unio;
-		}
-	}
-	unio += kmer2.size();
-	return (1.00 - (interseccio / unio)) * 100;
-}
+// //Corregir i entendre per a mi
+//set<string> Cjt_Especies::Calcular_kmer(string gen) {
+//	int size = gen.size();
+//	set<string> kmer;
+//	for (int i = 0; i < (size - kmer_value); ++i) {
+//		string kmerAux;
+//		for (int j = i; j < i + kmer_value; ++j) {
+//			kmerAux += gen[j];
+//		}
+//		set<string>::const_iterator it = kmer.end();
+//		kmer.insert(it, kmerAux);
+//	}
+//	return kmer;
+//}
+//
+////Corregir i entendre per a mi
+//double Cjt_Especies::CalcularDistancia(string genA, string genB) {
+//	double unio = 0;
+//	double interseccio = 0;
+//	set <string> kmer1 = Calcular_kmer(genA);
+//	set <string> kmer2 = Calcular_kmer(genB);
+//	for (set<string>::iterator it = kmer1.begin(); it != kmer1.end(); ++it) {
+//		set<string>::iterator it2 = kmer2.find(*it);
+//		if (it2 != kmer2.end()) {
+//			++interseccio;
+//			++unio;
+//			kmer2.erase(it2);
+//		}
+//		else {
+//			++unio;
+//		}
+//	}
+//	unio += kmer2.size();
+//	return (1.00 - (interseccio / unio)) * 100;
+//}
 

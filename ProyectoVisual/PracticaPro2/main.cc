@@ -42,10 +42,10 @@ void gestiona_input() {
 			Especies.Imprimeix_taula_distancies();
 		}
 		else if (comandament == "inicializa_clusters") {
-			Clusters.Inicialitza_clusters();
+			Clusters.Inicialitza_clusters(Especies);
 		}
 		else if (comandament == "ejecuta_paso_wpgma") {
-			Clusters.Executa_pas_wpgma(cluster1, cluster2);
+			Clusters.Executa_pas_wpgma();
 		}
 		else if (comandament == "imprime_cluster") {
 			cin >> id1;

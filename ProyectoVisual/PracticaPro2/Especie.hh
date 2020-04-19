@@ -4,6 +4,7 @@
 */
 #pragma once
 #include <string>
+#include <map>
 #include <vector>
 #include <iostream>
 using namespace std;
@@ -11,9 +12,7 @@ class Especie
 {
 private:
 	string gen;
-	//Aqui tmb podem fer que el vector sigui de un pair<string,int> per a comptar quantes vegades surt cada kmer.
-	vector<string> kmers;
-
+	map<string,int> map_kmers;
 	/**
 		*\brief Separa el gen en kmer_value chars.
 		*\pre S'ha llegit un string gen pel canal estandard d'entrada.
@@ -21,6 +20,14 @@ private:
 		*\param string gen Gen de l'element a re-estructurar.
 	*/
 	//set<string> Calcular_kmer(string gen);
+
+	/**
+		*\brief Calcula els kmer d'un gen d'una especie.
+		*\pre Cert.
+		*\post S'ha separat el gen en strings de longitud k.
+		*\param map<string,int> map_kmers Mapa de kmers resultant per referencia.
+	*/
+	void Calcula_kmer(map<string,int>& map_kmers);
 
 public: 
 	/**
@@ -46,12 +53,13 @@ public:
 
 	/**
 		*\brief Imprimeix la distancia entre dues especies donades.
-		*\warning Salta error si no existeix una de les especies donades.
-		*\pre S'han llegit els identificadors pel canal estandard d'entrada.
-		*\post S'ha escrit la distancia pel canal estandard de sortida.
-		*\param string id1 Identificador de la primera especie.
-		*\param string id2 Identificador de la segona especie.
+		*\pre S'han llegit el identificador pel canal estandard d'entrada.
+		*\post S'ha retornat la distancia pel canal estandard de sortida.
+		*\param Especie e2 Segona especie a calcula per referencia.
 	*/
-	double Calcula_distancia(const string& id2);
+	double Calcula_distancia(Especie &e2);
+
+	
+
 };
 

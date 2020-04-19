@@ -4,12 +4,8 @@
 */
 #pragma once
 #include <map>
-#include <vector>
-#include <string>
 #include <set>
-#include <iostream>
 #include "Especie.hh"
-using namespace std;
 
 /**
 	*\class Cjt_Especies Cjt_Especies.hh 
@@ -59,7 +55,7 @@ private:
 	void Esta_al_conjunt(bool& found, const string& id);
 
 public:
-
+	
 	/**
 		*\brief Funcio constructora de la clasee Cjt_Especies.
 		*\short La funcio recull el valor inicial de la \a k de l'algoritme \a kmer, i inicialitza el mapa d'especies ( map_especies ) en un mapa buit.
@@ -69,14 +65,21 @@ public:
 		*\brief Funcio destructora de la classe	Cjt_Especies.
 	*/
 	~Cjt_Especies();
+
+	/**
+		*\brief Funcio per obtenir el kmer_value.
+		*\pre Cert.
+		*\post S'ha retornat el kmer_value.
+	*/
+	int Get_kmer();
 	
 	/**
 		*\brief Crea una especie i la afegeix al conjunt.
 		*\warning Salta error si ja existeix una especie amb el mateix identificador.
 		*\pre S'han llegit dos strings id, i gen pel canal estandard d'entrada.
 		*\post S'ha afegit l'especie al conjunt.
-		*\param string id Identificador de l'especie.
-		*\param string gen Gen de l'especie.
+		*\param string id Identificador de l'especie per referencia constant.
+		*\param string gen Gen de l'especie per referencia constant.
 	*/
 	void Crea_especie(const string& id, const string& gen);
 	
@@ -85,13 +88,14 @@ public:
 		*\warning Salta error si no existeix una especie amb l'identificador donat.
 		*\pre S'ha llegit l'identificador pel canal estandard d'entrada.
 		*\post S'ha escrit el gen associat a l'identificador pel canal estandard de sortida.
-		*\param string id Identificador a associar amb un gen
+		*\param string id Identificador a associar amb un gen per referencia constant.
 	*/
 	void Obtenir_gen(const string& id);
 	
 	/**
 		*\brief Calcula la distancia entre les dues especies.
 		*\pre Cert.
+		*\warning Salta un error si qualssevol de les dues especies donades no existeix.
 		*\post S'ha retornat la distancia entre les dues especies donades.
 		*\param string id1 Identificador de la primera especie per referencia constant.
 		*\param string id2 Identificador de la segona especie per referencia constant.
@@ -117,23 +121,23 @@ public:
 
 	/**
 		*\brief Llegeix i omple un conjunt d'n especies.
-		*\pre Cert.
+		*\pre S'ha llegit un enter n pel canal estandard d'entrada.
 		*\post S'han llegit n parells d'identificadors i gens (Especies) pel canal estandard d'entrada i s'han introduit al conjunt buit.
-		*\param int n Enter n per referencia.
+		*\param int n Enter n per referencia constant.
 	*/
-	void Llegeix_cjt_especies(int& n);
+	void Llegeix_cjt_especies(const int& n);
 
 	/**
 		*\brief Imprimeix el conjunt d'especies.
 		*\pre Cert.
-		*\post S'ha escrit pel canal estandard de sortida.
+		*\post S'ha escrit pel canal estandard de sortida el conjunto.
 		*\note Si el conjunt es buit, no s'escriura res.
 	*/
 	void Imprimeix_cjt_especies();
 	
 	/**
-		*\brief Imprimeix la taula de distancies
-		*\pre Cert
+		*\brief Imprimeix la taula de distancies.
+		*\pre Cert.
 		*\post S'ha impres pel canal estandard de sortida la taula de distancies.
 	*/
 	void Imprimeix_taula_distancies();

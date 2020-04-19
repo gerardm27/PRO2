@@ -4,9 +4,7 @@
 */
 #pragma once
 #include "BinTree.hh"
-#include <iostream>
 #include "Cjt_Especies.hh"
-using namespace std;
 
 /**
 	*\class Cjt_Clusters Cjt_Clusters.hh
@@ -38,8 +36,6 @@ public:
 		*\warning Salta error si el numero de clusters del conjunt implicit es menor o igual a u.
 		*\pre Cert.
 		*\post S'ha executat un pas de l'algorisme WPGMA.
-		*\param cluster1
-		*\param cluster2
 	*/
 	void Executa_pas_wpgma();
 
@@ -68,6 +64,6 @@ public:
 		*\post S'ha escrit pel canal estandard de sortida l'arbre resultant de l'algorisme WPGMA amb el Cjt_Especies actual.
 	*/
 	void Imprimeix_arbre_filogenetic();
-
+	
 };
 
