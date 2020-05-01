@@ -7,11 +7,17 @@
 #include <map>
 #include <iostream>
 using namespace std;
+
+/**
+	*\class Especie Especie.hh
+	*\brief Classe Especie, conte un \a gen i un <em>mapa de kmers<\em>.
+*/
 class Especie
 {
 private:
 	string gen;
 	map<string,int> map_kmers;
+	map<string, double> map_distancies;
 	
 	/**
 		*\brief Calcula els kmer d'un gen d'una especie.
@@ -30,6 +36,8 @@ public:
 		*\param string gen Gen de l'especie a crear per referencia constant.
 	*/
 	Especie(const string& gen);
+	
+	Especie();
 
 	/**
 		*\brief Funcio destructora de la classe Especie.
@@ -46,7 +54,7 @@ public:
 
 	/**
 		*\brief Imprimeix la distancia entre dues especies donades.
-		*\pre S'han llegit el identificador pel canal estandard d'entrada.
+		*\pre S'han entrat una Especie.
 		*\post S'ha retornat la distancia pel canal estandard de sortida.
 		*\param Especie e2 Segona especie a calcula per referencia.
 	*/

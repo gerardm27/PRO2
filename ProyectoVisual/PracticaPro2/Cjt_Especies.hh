@@ -3,7 +3,6 @@
 	*\brief Representa un conjunt d'Especies amb atribut \b map_especies, on s'agrupen totes les especies.
 */
 #pragma once
-#include <map>
 #include <set>
 #include "Especie.hh"
 
@@ -21,8 +20,9 @@ private:
 
 	/**
 		*\short Taula de distancies amb Identificador i Vector de distancies.
+
+		map<string, vector<double>> Taula_distancies;
 	*/
-	map<string, vector<double>> Taula_distancies;
 
 	/**
 		*\brief Buida el conjunt d'especies.

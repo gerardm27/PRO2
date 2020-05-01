@@ -12,3 +12,4 @@ Coses importants a tenir en compte while coding and commenting:
 	- Si fas algun define, marcarlo aixi (\def name);
 	- Quan un parametre pot ser de més d'un tipus es separa aixi (\param type1|type2 name);
 	- Per a fer un comentari (\note);
+	- \mainpage (mirar)

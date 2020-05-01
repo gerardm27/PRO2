@@ -6,6 +6,11 @@ Especie::Especie(const string& gen)
 	Calcula_kmer(map_kmers);
 }
 
+Especie::Especie()
+{
+}
+
+
 Especie::~Especie()
 {
 	
@@ -58,7 +63,7 @@ double Especie::Calcula_distancia(Especie& e2)
 		}
 		
 	}
-	for (map<string, int>::iterator it = map_kmers_2.begin(); it != map_kmers.end(); ++it) {
+	for (map<string, int>::iterator it = map_kmers_2.begin(); it != map_kmers_2.end(); ++it) {
 		unio += it->second;
 	}
 	return ((1 - (interseccio / unio)) * 100);

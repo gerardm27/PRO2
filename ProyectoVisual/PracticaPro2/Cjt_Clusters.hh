@@ -15,10 +15,7 @@ class Cjt_Clusters
 
 private:
 
-	map<?,?> map_clusters;
-	Estructura de Emmagatzematge Arbres;
-	Estructura de Emmagatzematge Distancies;
-
+	BinTree<string> arbre_filogenetic;
 
 public:
 	/**

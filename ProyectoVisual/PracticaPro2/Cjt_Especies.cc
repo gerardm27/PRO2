@@ -18,11 +18,12 @@ void Cjt_Especies::Crea_especie(const string& id, const string& gen) {
 	Esta_al_conjunt(found, id);
 	//Si ja existeix, salta exception
 	if (found) {
-		throw "what(): Ja existeix?";
+		cout << "ERROR: L'especie ja existeix!" << endl;
 	}
 	//Sino l'afegeix
 	else {
-		map_especies.insert(make_pair(id, Especie(gen)));
+		Especie e(gen);
+		map_especies.insert(make_pair(id, e));
 		cout << "S'ha afegit l'especie amb identificador " << id << " i gen " << gen << " al conjunt" << endl;
 		//Actualitza_taula_distancies();
 	}
@@ -34,7 +35,7 @@ void Cjt_Especies::Obtenir_gen(const string& id) {
 
 	//Si ha acabat i no l'ha trobat, no existeix
 	if (not found) {
-		throw "what(): No existeix?";
+		cout << "ERROR: L'especie no existeix!" << endl;
 	}
 	else {
 		cout << "El gen associat a l'identificador " << id << " es: " << map_especies[id].Obtenir_gen() << endl;
@@ -46,13 +47,15 @@ double Cjt_Especies::Calcula_distancia(const string& id1, const string& id2) {
 	Esta_al_conjunt(found, id1);
 	//Si no existeix un dels dos, salta exception
 	if (not found) {
-		throw "what(): No existeix?";
+		cout << "ERROR: L'especie no existeix!" << endl;
+		return -1;
 	}
 	else {
 		found = false;
 		Esta_al_conjunt(found, id2);
 		if (not found) {
-			throw "what(): No existeix?";
+			cout << "ERROR: L'especie no existeix!" << endl;
+			return -1;
 		}
 		//Calcular la distancia entre id1, id2
 		else {
@@ -67,7 +70,7 @@ void Cjt_Especies::Elimina_especie(const string& id) {
 
 	//Si no existeix, salta exception
 	if (not found) {
-		throw "what(): No existeix?";
+		cout << "ERROR: L'especie no existeix!" << endl;
 	}
 	else {
 		map_especies.erase(id);
@@ -78,8 +81,8 @@ void Cjt_Especies::Elimina_especie(const string& id) {
 void Cjt_Especies::Existeix_especie(const string& id) {
 	bool found = false;
 	Esta_al_conjunt(found, id);
-	if (found) cout << "L'especie amb identificador " << id << " existeix al conjunt." << endl;
-	else cout << "L'especie amb identificador " << id << " no existeix al conjunt." << endl;
+	if (found) cout << "SI" << endl;
+	else cout << "NO" << endl;
 }
 
 void Cjt_Especies::Buida_cjt_especies() {
@@ -91,7 +94,8 @@ void Cjt_Especies::Llegeix_cjt_especies(const int& n) {
 	string id, gen;
 	for (int i = 0; i < n; ++i) {
 		cin >> id >> gen;
-		map_especies.insert(make_pair(id, Especie(gen)));
+		Especie e(gen);
+		map_especies.insert(make_pair(id, e));
 	}
 }
 
@@ -101,11 +105,22 @@ void Cjt_Especies::Imprimeix_cjt_especies() {
 	}
 }
 
+/*
 void Cjt_Especies::Afegir_element_taula_distancies(const string& id) {
-
+	**
 }
+*/
 
 void Cjt_Especies::Imprimeix_taula_distancies() {
-	
+	for (map<string, Especie>::iterator it = map_especies.begin(); it != map_especies.end(); ++it) {
+		cout << it->first << ":";
+
+		for (map<string, Especie>::iterator it2 = it; it2 != map_especies.end(); ++it2) {
+			if (it2->first > it->first) {
+				cout << " " << it2->first << " (" << it->second.Calcula_distancia(it2->second) << ")";
+			}
+		}
+		cout << endl;
+	}
 }
 
