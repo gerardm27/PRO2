@@ -24,8 +24,8 @@ string Especie::Obtenir_gen()
 
 void Especie::Calcula_kmer(map<string,int>& map_kmers)
 {
-	string aux;
 	for (int i = 0; i <= gen.size() - k; ++i) {
+		string aux;
 		aux.append(gen.begin()+i, gen.begin()+i+k);
 		if (map_kmers.find(aux) == map_kmers.end()) {
 			map_kmers.insert(make_pair(aux, 1));
@@ -43,18 +43,15 @@ double Especie::Calcula_distancia(Especie& e2)
 	double interseccio = 0;
 	for (map<string, int>::iterator it = map_kmers.begin(); it != map_kmers.end(); ++it) {
 		map<string, int>::iterator it2 = map_kmers_2.find(it->first);
+		
 		if (it2 != map_kmers_2.end()) {
-			if (it->second == it2->second) {
+			if (it->second <= it2->second) {
 				interseccio += it->second;
-				unio += it->second;
+				unio += it2->second;
 			}
 			else if (it->second > it2->second) {
 				interseccio += it2->second;
 				unio += it->second;
-			}
-			else {
-				interseccio += it->second;
-				unio += it2->second;
 			}
 			map_kmers_2.erase(it->first);
 		}

@@ -18,13 +18,12 @@ void Cjt_Especies::Crea_especie(const string& id, const string& gen) {
 	Esta_al_conjunt(found, id);
 	//Si ja existeix, salta exception
 	if (found) {
-		cout << "ERROR: L'especie ja existeix!" << endl;
+		cout << "ERROR: La especie " << id << " ya existe." << endl;
 	}
 	//Sino l'afegeix
 	else {
 		Especie e(gen);
 		map_especies.insert(make_pair(id, e));
-		cout << "S'ha afegit l'especie amb identificador " << id << " i gen " << gen << " al conjunt" << endl;
 		//Actualitza_taula_distancies();
 	}
 }
@@ -35,34 +34,35 @@ void Cjt_Especies::Obtenir_gen(const string& id) {
 
 	//Si ha acabat i no l'ha trobat, no existeix
 	if (not found) {
-		cout << "ERROR: L'especie no existeix!" << endl;
+		cout << "ERROR: La especie " << id << " no existe." << endl;
 	}
 	else {
-		cout << "El gen associat a l'identificador " << id << " es: " << map_especies[id].Obtenir_gen() << endl;
+		cout << map_especies[id].Obtenir_gen() << endl;
 	}
 }
 
 double Cjt_Especies::Calcula_distancia(const string& id1, const string& id2) {
-	bool found = false;
-	Esta_al_conjunt(found, id1);
-	//Si no existeix un dels dos, salta exception
-	if (not found) {
-		cout << "ERROR: L'especie no existeix!" << endl;
+	bool found1 = false;
+	bool found2 = false;
+	Esta_al_conjunt(found1, id1);
+	Esta_al_conjunt(found2, id2);
+	if (not found1 and found2) {
+		cout << "ERROR: La especie " << id1 << " no existe." << endl;
+		return -1;
+	}
+	if (found1 and not found2) {
+		cout << "ERROR: La especie " << id2 << " no existe." << endl;
+		return -1;
+	}
+	if (not found1 and not found2) {
+		cout << "ERROR: La especie " << id1 << " y la especie " << id2 << " no existen." << endl;
 		return -1;
 	}
 	else {
-		found = false;
-		Esta_al_conjunt(found, id2);
-		if (not found) {
-			cout << "ERROR: L'especie no existeix!" << endl;
-			return -1;
-		}
-		//Calcular la distancia entre id1, id2
-		else {
 			return map_especies[id1].Calcula_distancia(map_especies[id2]);
-		}
 	}
 }
+
 
 void Cjt_Especies::Elimina_especie(const string& id) {
 	bool found = false;
@@ -70,11 +70,10 @@ void Cjt_Especies::Elimina_especie(const string& id) {
 
 	//Si no existeix, salta exception
 	if (not found) {
-		cout << "ERROR: L'especie no existeix!" << endl;
+		cout << "ERROR: La especie " << id << " no existe." << endl;
 	}
 	else {
 		map_especies.erase(id);
-		cout << "S'ha eliminat l'especie amb identificador " << id << " del conjunt." << endl;
 	}
 }
 
