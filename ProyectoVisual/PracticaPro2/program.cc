@@ -10,40 +10,39 @@ void gestiona_input() {
 	cin >> valor;
 	Especie::Canviar_k(valor);
 
-	string comandament, id1, id2, gen;
+	string comandament, id, id2, gen;
 	Cjt_Especies Especies;
 	Cjt_Clusters Clusters;
 	while (cin >> comandament and comandament != "fin") {
-
 		if (comandament == "crea_especie") {
-			cin >> id1 >> gen;
-			cout << "# crea_especie " << id1 << " " << gen << endl;
-			Especies.Crea_especie(id1, gen);
+			cin >> id >> gen;
+			cout << "# crea_especie " << id << " " << gen << endl;
+			Especies.Crea_especie(id, gen);
 			cout << endl;
 		}
 		else if (comandament == "obtener_gen") {
-			cin >> id1;
-			cout << "# obtener_gen " << id1 << endl;
-			Especies.Obtenir_gen(id1);
+			cin >> id;
+			cout << "# obtener_gen " << id << endl;
+			Especies.Obtenir_gen(id);
 			cout << endl;
 		}
 		else if (comandament == "distancia") {
-			cin >> id1 >> id2;
-			cout << "# distancia " << id1 << " " << id2 << endl;
-			double dis = Especies.Calcula_distancia(id1, id2);
+			cin >> id >> id2;
+			cout << "# distancia " << id << " " << id2 << endl;
+			double dis = Especies.Calcula_distancia(id, id2);
 			if (dis != -1) cout << dis << endl;
 			cout << endl;
 		}
 		else if (comandament == "elimina_especie") {
-			cin >> id1;
-			cout << "# elimina_especie " << id1 << endl;
-			Especies.Elimina_especie(id1);
+			cin >> id;
+			cout << "# elimina_especie " << id << endl;
+			Especies.Elimina_especie(id);
 			cout << endl;
 		}
 		else if (comandament == "existe_especie") {
-			cin >> id1;
-			cout << "# existe_especie " << id1 << endl;
-			Especies.Existeix_especie(id1);
+			cin >> id;
+			cout << "# existe_especie " << id << endl;
+			Especies.Existeix_especie(id);
 			cout << endl;
 		}
 		else if (comandament == "lee_cjt_especies") {
@@ -63,7 +62,6 @@ void gestiona_input() {
 			Especies.Imprimeix_taula_distancies();
 			cout << endl;
 		}
-		/*
 		else if (comandament == "inicializa_clusters") {
 			Clusters.Inicialitza_clusters(Especies);
 			cout << endl;
@@ -73,15 +71,14 @@ void gestiona_input() {
 			cout << endl;
 		}
 		else if (comandament == "imprime_cluster") {
-			cin >> id1;
-			Clusters.Imprimeix_clusters(id1);
+			cin >> id;
+			Clusters.Imprimeix_clusters(id);
 			cout << endl;
 		}
 		else if (comandament == "imprime_arbol_filogenetico") {
 			Clusters.Imprimeix_arbre_filogenetic();
 			cout << endl;
 		}
-		*/
 	}
 }
 

@@ -41,25 +41,25 @@ void Cjt_Especies::Obtenir_gen(const string& id) {
 	}
 }
 
-double Cjt_Especies::Calcula_distancia(const string& id1, const string& id2) {
+double Cjt_Especies::Calcula_distancia(const string& id, const string& id2) {
 	bool found1 = false;
 	bool found2 = false;
-	Esta_al_conjunt(found1, id1);
+	Esta_al_conjunt(found1, id);
 	Esta_al_conjunt(found2, id2);
 	if (not found1 and found2) {
-		cout << "ERROR: La especie " << id1 << " no existe." << endl;
+		cout << "ERROR: La especie " << id << " no existe." << endl;
 		return -1;
 	}
-	if (found1 and not found2) {
+	else if (found1 and not found2) {
 		cout << "ERROR: La especie " << id2 << " no existe." << endl;
 		return -1;
 	}
 	if (not found1 and not found2) {
-		cout << "ERROR: La especie " << id1 << " y la especie " << id2 << " no existen." << endl;
+		cout << "ERROR: La especie " << id << " y la especie " << id2 << " no existen." << endl;
 		return -1;
 	}
 	else {
-			return map_especies[id1].Calcula_distancia(map_especies[id2]);
+			return map_especies[id].Calcula_distancia(map_especies[id2]);
 	}
 }
 

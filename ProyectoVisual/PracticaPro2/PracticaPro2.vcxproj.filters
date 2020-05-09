@@ -21,10 +21,10 @@
     <ClCompile Include="Cjt_Clusters.cc">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="main.cc">
+    <ClCompile Include="Especie.cc">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="Especie.cc">
+    <ClCompile Include="program.cc">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -35,10 +35,10 @@
     <ClInclude Include="Cjt_Clusters.hh">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="main.hh">
+    <ClInclude Include="Especie.hh">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="Especie.hh">
+    <ClInclude Include="program.hh">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>

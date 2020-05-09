@@ -1,2 +1,4 @@
-﻿  main.cc
-c1xx : fatal error C1083: No se puede abrir el archivo origen: 'main.cc': No such file or directory
+﻿  Especie.cc
+  program.cc
+  Generando código...
+  PracticaPro2.vcxproj -> C:\Users\pekem\Documents\GitHub\PracticaPro2\ProyectoVisual\x64\Debug\PracticaPro2.exe

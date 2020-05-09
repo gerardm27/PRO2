@@ -84,10 +84,10 @@ public:
 		*\pre Cert.
 		*\warning Salta un error si qualssevol de les dues especies donades no existeix.
 		*\post S'ha retornat la distancia entre les dues especies donades.
-		*\param string id1 Identificador de la primera especie per referencia constant.
+		*\param string id Identificador de la primera especie per referencia constant.
 		*\param string id2 Identificador de la segona especie per referencia constant.
 	*/
-	double Calcula_distancia(const string& id1, const string& id2);
+	double Calcula_distancia(const string& id, const string& id2);
 
 	/**
 		*\brief Elimina l'especie del conjunt.

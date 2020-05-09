@@ -150,13 +150,13 @@
     <ClCompile Include="Cjt_Clusters.cc" />
     <ClCompile Include="Cjt_Especies.cc" />
     <ClCompile Include="Especie.cc" />
-    <ClCompile Include="main.cc" />
+    <ClCompile Include="program.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cjt_Clusters.hh" />
     <ClInclude Include="Cjt_Especies.hh" />
     <ClInclude Include="Especie.hh" />
-    <ClInclude Include="main.hh" />
+    <ClInclude Include="program.hh" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="DoxyHelp.txt" />
