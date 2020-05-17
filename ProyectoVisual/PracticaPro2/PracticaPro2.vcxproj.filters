@@ -46,5 +46,8 @@
     <Text Include="DoxyHelp.txt">
       <Filter>Archivos de recursos</Filter>
     </Text>
+    <Text Include="TODO.txt">
+      <Filter>Archivos de recursos</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -63,19 +63,24 @@ void gestiona_input() {
 			cout << endl;
 		}
 		else if (comandament == "inicializa_clusters") {
+			cout << "# inicializa_clusters" << endl;
 			Clusters.Inicialitza_clusters(Especies);
 			cout << endl;
 		}
 		else if (comandament == "ejecuta_paso_wpgma") {
-			Clusters.Executa_pas_wpgma();
+			cout << "# ejecuta_paso_wpgma" << endl;
+			Clusters.Executa_pas_wpgma(true);
 			cout << endl;
 		}
 		else if (comandament == "imprime_cluster") {
 			cin >> id;
+			cout << "# imprime_cluster " << id << endl;
 			Clusters.Imprimeix_clusters(id);
 			cout << endl;
 		}
 		else if (comandament == "imprime_arbol_filogenetico") {
+			cout << "# imprime_arbol_filogenetico" << endl;
+			Clusters.Inicialitza_clusters(Especies, false);
 			Clusters.Imprimeix_arbre_filogenetic();
 			cout << endl;
 		}

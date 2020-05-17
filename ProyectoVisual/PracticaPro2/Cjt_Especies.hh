@@ -41,6 +41,14 @@ private:
 	void Afegir_element_taula_distancies(const string& id);
 
 	/**
+		*\brief Elimina un element de la taula.
+		*\pre S'ha llegit un string id pel canal estandard d'entrada.
+		*\post S'ha eliminat un element de la taula de distancies.
+		*\param string id Identificador de l'element a eliminar per referencia constant.
+	*/
+	void Eliminar_element_taula_distancies(const string& id);
+
+	/**
 	\brief Comproba si l'element donat esta al conjunt.
 	\note Aquesta funcio no pot ser cridada per l'usuari. Es d'us auxiliar.
 	\pre Found = false.
@@ -51,6 +59,11 @@ private:
 	void Esta_al_conjunt(bool& found, const string& id);
 public:
 	
+	/**
+		*\short Taula de distancies per emmagatzemar les distancies.
+	*/
+	map<pair<string,string>,double> taula_distancies;
+
 	/**
 		*\brief Funcio constructora de la clasee Cjt_Especies.
 	*/

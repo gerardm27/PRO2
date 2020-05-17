@@ -5,6 +5,7 @@
 #pragma once
 #include "BinTree.hh"
 #include "Cjt_Especies.hh"
+#include <set>
 
 /**
 	*\class Cjt_Clusters Cjt_Clusters.hh
@@ -14,8 +15,13 @@ class Cjt_Clusters
 {
 
 private:
+	
+	map<string, BinTree<pair<string, double> > > mapa_clusters;
+	double distancia_min = 999999;
+	map<pair<string, string>, double> taula_clusters;
+	set<string> set_clusters;
 
-	BinTree<string> arbre_filogenetic;
+	void Imprimeix_arbre(BinTree<pair<string, double> > arbre);
 
 public:
 	/**
@@ -34,7 +40,11 @@ public:
 		*\pre Cert.
 		*\post S'ha executat un pas de l'algorisme WPGMA.
 	*/
-	void Executa_pas_wpgma();
+	void Executa_pas_wpgma(bool print = false);
+
+	void Eliminar_element_taula_clusters(const string& id);
+
+	void Afegir_element_taula_clusters(const string& id1, const string& id2);
 
 	/**
 		*\brief Inicialitza el conjunt de clusters.
@@ -42,7 +52,7 @@ public:
 		*\post S'ha inicialitzat el Conjunt de clusters amb el Cjt_Especies actual. S'imprimiran els clusters resultants i la taula de distancies corresponent.
 		*\note Si el conjunt es buit, no s'imprimira res.
 	*/
-	void Inicialitza_clusters(const Cjt_Especies& cjt_esp);
+	void Inicialitza_clusters(const Cjt_Especies& cjt_esp, bool print = true);
 
 	/**
 		*\brief Donat un identificador, imprimeix l'arbre corresponent.
@@ -61,6 +71,8 @@ public:
 		*\post S'ha escrit pel canal estandard de sortida l'arbre resultant de l'algorisme WPGMA amb el Cjt_Especies actual.
 	*/
 	void Imprimeix_arbre_filogenetic();
+
+	void Imprimeix_taula_clusters();
 	
 };
 
