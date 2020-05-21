@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['_7ecjt_5fclusters_51',['~Cjt_Clusters',['../class_cjt___clusters.html#a71b7feadb377225edecc0b980a8c18d6',1,'Cjt_Clusters']]],
-  ['_7ecjt_5fespecies_52',['~Cjt_Especies',['../class_cjt___especies.html#a1ca01609e28327635b4c1d4eb5baea5d',1,'Cjt_Especies']]],
-  ['_7eespecie_53',['~Especie',['../class_especie.html#abd21378dde6e8348d823c6f87a1c0658',1,'Especie']]]
+  ['obtenir_5fgen_85',['Obtenir_gen',['../class_cjt___especies.html#a45f4e1db00eb5a1595f981d88177b14c',1,'Cjt_Especies::Obtenir_gen()'],['../class_especie.html#a745fdea7f45a2c586be7b8ef150648d7',1,'Especie::Obtenir_gen()']]]
 ];

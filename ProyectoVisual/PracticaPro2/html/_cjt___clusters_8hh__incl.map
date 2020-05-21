@@ -1,9 +1,9 @@
 <map id="Cjt_Clusters.hh" name="Cjt_Clusters.hh">
-<area shape="rect" id="node1" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, on aquest agrupa tots els clusters." alt="" coords="55,5,165,32"/>
+<area shape="rect" id="node1" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, distancia_min, taula_clusters i set_clu..." alt="" coords="55,5,165,32"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,80,89,107"/>
 <area shape="rect" id="node3" href="$_cjt___especies_8hh.html" title="Representa un conjunt d&#39;Especies amb atribut map_especies, on s&#39;agrupen totes les especies." alt="" coords="114,80,231,107"/>
 <area shape="rect" id="node4" title=" " alt="" coords="109,155,149,181"/>
-<area shape="rect" id="node5" href="$_especie_8hh.html" title="Representa una Especie amb atributs gen i kmers, on l&#39;ultim agrupa tots els strings de la separacio p..." alt="" coords="173,155,260,181"/>
+<area shape="rect" id="node5" href="$_especie_8hh.html" title="Representa una Especie amb atributs gen , kmers i map_distancies." alt="" coords="173,155,260,181"/>
 <area shape="rect" id="node6" title=" " alt="" coords="115,229,169,256"/>
 <area shape="rect" id="node7" title=" " alt="" coords="193,229,240,256"/>
 <area shape="rect" id="node8" title=" " alt="" coords="265,229,337,256"/>

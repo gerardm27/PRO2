@@ -76,37 +76,39 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_especie.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_especie.html">Especie</a></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">string</span> gen;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    map&lt;string,int&gt; map_kmers;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    map&lt;string, double&gt; map_distancies;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> Calcula_kmer(map&lt;string,int&gt;&amp; map_kmers);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> k;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>: </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_especie.html">Especie</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; gen);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ~<a class="code" href="class_especie.html">Especie</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_especie.html#ac35bb565f7346cd6317b3a8c849456d1">   21</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="class_especie.html#ac35bb565f7346cd6317b3a8c849456d1">gen</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_especie.html#aedd523e511001346c83057b264466475">   26</a></span>&#160;    map&lt;string,int&gt; <a class="code" href="class_especie.html#aedd523e511001346c83057b264466475">map_kmers</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_especie.html#a26075cb6d1a0a733d07176534789336f">   31</a></span>&#160;    map&lt;string, double&gt; <a class="code" href="class_especie.html#a26075cb6d1a0a733d07176534789336f">map_distancies</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> Calcula_kmer(map&lt;string,int&gt;&amp; map_kmers);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_especie.html#a592c0ddeeebc786969f3040fbefea9df">   44</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_especie.html#a592c0ddeeebc786969f3040fbefea9df">k</a>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">string</span> Obtenir_gen();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">double</span> Calcula_distancia(<a class="code" href="class_especie.html">Especie</a> &amp;e2);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> Canviar_k(<span class="keywordtype">int</span> valor);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>: </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_especie.html">Especie</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; gen);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="class_especie.html">Especie</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    ~<a class="code" href="class_especie.html">Especie</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">string</span> Obtenir_gen();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">double</span> Calcula_distancia(<a class="code" href="class_especie.html">Especie</a> &amp;e2);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> Canviar_k(<span class="keywordtype">int</span> valor);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_especie_html_a745fdea7f45a2c586be7b8ef150648d7"><div class="ttname"><a href="class_especie.html#a745fdea7f45a2c586be7b8ef150648d7">Especie::Obtenir_gen</a></div><div class="ttdeci">string Obtenir_gen()</div><div class="ttdoc">Obte el gen de l'Especie del parametre implícit.</div><div class="ttdef"><b>Definition:</b> Especie.cc:15</div></div>
-<div class="ttc" id="aclass_especie_html_a001fb5479e9d3344da53a6b4205df291"><div class="ttname"><a href="class_especie.html#a001fb5479e9d3344da53a6b4205df291">Especie::Canviar_k</a></div><div class="ttdeci">static void Canviar_k(int valor)</div><div class="ttdoc">S'utilitza per a obtenir el valor de k.</div><div class="ttdef"><b>Definition:</b> Especie.cc:67</div></div>
-<div class="ttc" id="aclass_especie_html_a597cfbcc08d584338ffe2f5105f9e9c1"><div class="ttname"><a href="class_especie.html#a597cfbcc08d584338ffe2f5105f9e9c1">Especie::Especie</a></div><div class="ttdeci">Especie(const string &amp;gen)</div><div class="ttdoc">Funcio constructora de la classe Especie.</div><div class="ttdef"><b>Definition:</b> Especie.cc:3</div></div>
-<div class="ttc" id="aclass_especie_html_abd21378dde6e8348d823c6f87a1c0658"><div class="ttname"><a href="class_especie.html#abd21378dde6e8348d823c6f87a1c0658">Especie::~Especie</a></div><div class="ttdeci">~Especie()</div><div class="ttdoc">Funcio destructora de la classe Especie.</div><div class="ttdef"><b>Definition:</b> Especie.cc:9</div></div>
-<div class="ttc" id="aclass_especie_html"><div class="ttname"><a href="class_especie.html">Especie</a></div><div class="ttdoc">Classe Especie, conte un gen i un mapa de kmers&lt; &gt;.</div><div class="ttdef"><b>Definition:</b> Especie.hh:15</div></div>
-<div class="ttc" id="a_especie_8hh_html"><div class="ttname"><a href="_especie_8hh.html">Especie.hh</a></div><div class="ttdoc">Representa una Especie amb atributs gen i kmers, on l'ultim agrupa tots els strings de la separacio p...</div></div>
-<div class="ttc" id="aclass_especie_html_a15faa059ff1b3ed0b362f4900cb9180d"><div class="ttname"><a href="class_especie.html#a15faa059ff1b3ed0b362f4900cb9180d">Especie::Calcula_distancia</a></div><div class="ttdeci">double Calcula_distancia(Especie &amp;e2)</div><div class="ttdoc">Imprimeix la distancia entre dues especies donades.</div><div class="ttdef"><b>Definition:</b> Especie.cc:34</div></div>
+<div class="ttc" id="aclass_especie_html_a592c0ddeeebc786969f3040fbefea9df"><div class="ttname"><a href="class_especie.html#a592c0ddeeebc786969f3040fbefea9df">Especie::k</a></div><div class="ttdeci">static int k</div><div class="ttdoc">Valor de la k, que entra a l'inici del problema.</div><div class="ttdef"><b>Definition:</b> <a href="_especie_8hh_source.html#l00044">Especie.hh:44</a></div></div>
+<div class="ttc" id="aclass_especie_html"><div class="ttname"><a href="class_especie.html">Especie</a></div><div class="ttdoc">Classe Especie, conte un gen i un mapa de kmers.</div><div class="ttdef"><b>Definition:</b> <a href="_especie_8hh_source.html#l00015">Especie.hh:15</a></div></div>
+<div class="ttc" id="aclass_especie_html_a26075cb6d1a0a733d07176534789336f"><div class="ttname"><a href="class_especie.html#a26075cb6d1a0a733d07176534789336f">Especie::map_distancies</a></div><div class="ttdeci">map&lt; string, double &gt; map_distancies</div><div class="ttdoc">mapa de distancies, agrupa les distancies de l'Especie amb altres Especies.</div><div class="ttdef"><b>Definition:</b> <a href="_especie_8hh_source.html#l00031">Especie.hh:31</a></div></div>
+<div class="ttc" id="aclass_especie_html_aedd523e511001346c83057b264466475"><div class="ttname"><a href="class_especie.html#aedd523e511001346c83057b264466475">Especie::map_kmers</a></div><div class="ttdeci">map&lt; string, int &gt; map_kmers</div><div class="ttdoc">mapa de kmers, agrupa les separacions del gen.</div><div class="ttdef"><b>Definition:</b> <a href="_especie_8hh_source.html#l00026">Especie.hh:26</a></div></div>
+<div class="ttc" id="aclass_especie_html_ac35bb565f7346cd6317b3a8c849456d1"><div class="ttname"><a href="class_especie.html#ac35bb565f7346cd6317b3a8c849456d1">Especie::gen</a></div><div class="ttdeci">string gen</div><div class="ttdoc">Gen de l'instancia d'Especie.</div><div class="ttdef"><b>Definition:</b> <a href="_especie_8hh_source.html#l00021">Especie.hh:21</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generat per &#160;<a href="http://www.doxygen.org/index.html">

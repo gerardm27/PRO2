@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['elimina_5fespecie_38',['Elimina_especie',['../class_cjt___especies.html#a3d086b91aff0c657d11733745ce3e1de',1,'Cjt_Especies']]],
-  ['especie_39',['Especie',['../class_especie.html#a597cfbcc08d584338ffe2f5105f9e9c1',1,'Especie']]],
-  ['executa_5fpas_5fwpgma_40',['Executa_pas_wpgma',['../class_cjt___clusters.html#a6de85dfaa750d42e402364733623b244',1,'Cjt_Clusters']]],
-  ['existeix_5fespecie_41',['Existeix_especie',['../class_cjt___especies.html#ab97a37a24ff3f7b33ed9f7aa2122ed82',1,'Cjt_Especies']]]
+  ['calcula_5fdistancia_62',['Calcula_distancia',['../class_cjt___especies.html#a2cc1711f99f535be55530adc17b36cf6',1,'Cjt_Especies::Calcula_distancia()'],['../class_especie.html#a15faa059ff1b3ed0b362f4900cb9180d',1,'Especie::Calcula_distancia()']]],
+  ['calcula_5fkmer_63',['Calcula_kmer',['../class_especie.html#a59c857829e238edd6f753324ecdc97d6',1,'Especie']]],
+  ['canviar_5fk_64',['Canviar_k',['../class_especie.html#a001fb5479e9d3344da53a6b4205df291',1,'Especie']]],
+  ['cjt_5fclusters_65',['Cjt_Clusters',['../class_cjt___clusters.html#a2e55759944a78043744103e19dd87c1c',1,'Cjt_Clusters']]],
+  ['cjt_5fespecies_66',['Cjt_Especies',['../class_cjt___especies.html#ae423b9d5a456158136c17d9210c90c2e',1,'Cjt_Especies']]],
+  ['crea_5fespecie_67',['Crea_especie',['../class_cjt___especies.html#aac7c492779aa6e747929ad64d3420616',1,'Cjt_Especies']]]
 ];

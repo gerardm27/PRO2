@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['taula_5fdistancies_55',['Taula_distancies',['../class_cjt___especies.html#a6dd0019d9b2835b9acef7bc2db598b3f',1,'Cjt_Especies']]]
+  ['high_5fvalue_91',['HIGH_VALUE',['../class_cjt___clusters.html#aaef589ae7a1917b49588de995e324aa3',1,'Cjt_Clusters']]]
 ];

@@ -1,4 +1,5 @@
 <map id="Cjt_Especies::Elimina_especie" name="Cjt_Especies::Elimina_especie">
-<area shape="rect" id="node1" title="Elimina l&#39;especie del conjunt." alt="" coords="5,5,156,47"/>
-<area shape="rect" id="node2" href="$class_cjt___especies.html#abca52eb0626e5f8ee933bc0715eb7767" title="Comproba si l&#39;element donat esta al conjunt." alt="" coords="204,5,339,47"/>
+<area shape="rect" id="node1" title="Elimina l&#39;especie del conjunt." alt="" coords="5,39,156,80"/>
+<area shape="rect" id="node2" href="$class_cjt___especies.html#aadef0947ec49aa446e91be444a44bfb0" title="Elimina un element de la taula." alt="" coords="204,5,380,47"/>
+<area shape="rect" id="node3" href="$class_cjt___especies.html#abca52eb0626e5f8ee933bc0715eb7767" title="Comprova si l&#39;element donat esta al conjunt." alt="" coords="225,71,359,112"/>
 </map>

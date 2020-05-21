@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['llegeix_5fcjt_5fespecies_19',['Llegeix_cjt_especies',['../class_cjt___especies.html#ab30e0d4757be5c84c95f5b02da44c7e3',1,'Cjt_Especies']]]
+  ['high_5fvalue_25',['HIGH_VALUE',['../class_cjt___clusters.html#aaef589ae7a1917b49588de995e324aa3',1,'Cjt_Clusters']]]
 ];

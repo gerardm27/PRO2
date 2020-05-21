@@ -1,5 +1,6 @@
 <map id="Cjt_Especies::Crea_especie" name="Cjt_Especies::Crea_especie">
-<area shape="rect" id="node1" title="Crea una especie i la afegeix al conjunt." alt="" coords="259,5,393,47"/>
-<area shape="rect" id="node2" href="$main_8hh.html#a1c1a99a8e87619f86c15bdc6f33e8903" title="Gestiona l&#39;input rebut." alt="" coords="104,13,211,39"/>
-<area shape="rect" id="node3" href="$main_8hh.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Primera funcio que s&#39;executa al programa." alt="" coords="5,13,56,39"/>
+<area shape="rect" id="node1" title="Crea una especie i l&#39;afegeix al conjunt." alt="" coords="455,5,589,47"/>
+<area shape="rect" id="node2" href="$program_8hh.html#a1c1a99a8e87619f86c15bdc6f33e8903" title="Gestiona l&#39;input rebut." alt="" coords="104,13,211,39"/>
+<area shape="rect" id="node4" href="$class_cjt___especies.html#ab30e0d4757be5c84c95f5b02da44c7e3" title="Llegeix i omple un conjunt d&#39;n especies." alt="" coords="259,35,407,76"/>
+<area shape="rect" id="node3" href="$program_8hh.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Primera funcio que s&#39;executa al programa." alt="" coords="5,13,56,39"/>
 </map>

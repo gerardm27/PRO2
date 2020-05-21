@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage{ifthen}
+\usepackage{epsfig}
+\usepackage[utf8]{inputenc}
+\usepackage{newunicodechar}
+  \newunicodechar{⁻}{${}^{-}$}% Superscript minus
+  \newunicodechar{²}{${}^{2}$}% Superscript two
+  \newunicodechar{³}{${}^{3}$}% Superscript three
+
+\pagestyle{empty}
+\begin{document}
+$ \delta_k(e_1,e_2) = (1- (\frac{#(kmer(g1, k) ⋂ kmer(g2, k))}{#(kmer(g1, k) ⋃ kmer(g2, k))})) \times 100 $
+\pagebreak
+
+\end{document}

@@ -1,0 +1,230 @@
+\hypertarget{class_especie}{}\doxysection{Referència de la Classe Especie}
+\label{class_especie}\index{Especie@{Especie}}
+
+
+Classe \mbox{\hyperlink{class_especie}{Especie}}, conte un {\itshape gen} i un {\itshape mapa} {\itshape de} {\itshape kmers}.  
+
+
+
+
+{\ttfamily \#include $<$Especie.\+hh$>$}
+
+
+
+Diagrama de col·laboració per a Especie\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_especie__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_especie_a597cfbcc08d584338ffe2f5105f9e9c1}{Especie}} (const string \&\mbox{\hyperlink{class_especie_ac35bb565f7346cd6317b3a8c849456d1}{gen}})
+\begin{DoxyCompactList}\small\item\em Funcio constructora de la classe \mbox{\hyperlink{class_especie}{Especie}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_especie_abd21378dde6e8348d823c6f87a1c0658}\label{class_especie_abd21378dde6e8348d823c6f87a1c0658}} 
+\mbox{\hyperlink{class_especie_abd21378dde6e8348d823c6f87a1c0658}{$\sim$\+Especie}} ()
+\begin{DoxyCompactList}\small\item\em Funcio destructora de la classe \mbox{\hyperlink{class_especie}{Especie}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_especie_a745fdea7f45a2c586be7b8ef150648d7}{Obtenir\+\_\+gen}} ()
+\begin{DoxyCompactList}\small\item\em Obte el gen de l\textquotesingle{}\mbox{\hyperlink{class_especie}{Especie}} del parametre implicit. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_especie_a15faa059ff1b3ed0b362f4900cb9180d}{Calcula\+\_\+distancia}} (\mbox{\hyperlink{class_especie}{Especie}} \&e2)
+\begin{DoxyCompactList}\small\item\em Imprimeix la distancia entre l\textquotesingle{}especie donada i el parametre implicit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Públics Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_especie_a001fb5479e9d3344da53a6b4205df291}{Canviar\+\_\+k}} (int valor)
+\begin{DoxyCompactList}\small\item\em S\textquotesingle{}utilitza per a obtenir el valor de k. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_especie_a59c857829e238edd6f753324ecdc97d6}{Calcula\+\_\+kmer}} (map$<$ string, int $>$ \&\mbox{\hyperlink{class_especie_aedd523e511001346c83057b264466475}{map\+\_\+kmers}})
+\begin{DoxyCompactList}\small\item\em Calcula els kmer d\textquotesingle{}un gen d\textquotesingle{}una especie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_especie_ac35bb565f7346cd6317b3a8c849456d1}\label{class_especie_ac35bb565f7346cd6317b3a8c849456d1}} 
+string \mbox{\hyperlink{class_especie_ac35bb565f7346cd6317b3a8c849456d1}{gen}}
+\begin{DoxyCompactList}\small\item\em Gen de l\textquotesingle{}instancia d\textquotesingle{}\mbox{\hyperlink{class_especie}{Especie}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_especie_aedd523e511001346c83057b264466475}\label{class_especie_aedd523e511001346c83057b264466475}} 
+map$<$ string, int $>$ \mbox{\hyperlink{class_especie_aedd523e511001346c83057b264466475}{map\+\_\+kmers}}
+\begin{DoxyCompactList}\small\item\em mapa de kmers, agrupa les separacions del gen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_especie_a26075cb6d1a0a733d07176534789336f}\label{class_especie_a26075cb6d1a0a733d07176534789336f}} 
+map$<$ string, double $>$ \mbox{\hyperlink{class_especie_a26075cb6d1a0a733d07176534789336f}{map\+\_\+distancies}}
+\begin{DoxyCompactList}\small\item\em mapa de distancies, agrupa les distancies de l\textquotesingle{}\mbox{\hyperlink{class_especie}{Especie}} amb altres Especies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats Estàtics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_especie_a592c0ddeeebc786969f3040fbefea9df}\label{class_especie_a592c0ddeeebc786969f3040fbefea9df}} 
+static int \mbox{\hyperlink{class_especie_a592c0ddeeebc786969f3040fbefea9df}{k}}
+\begin{DoxyCompactList}\small\item\em Valor de la {\itshape k}, que entra a l\textquotesingle{}inici del problema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe \mbox{\hyperlink{class_especie}{Especie}}, conte un {\itshape gen} i un {\itshape mapa} {\itshape de} {\itshape kmers}. 
+
+Definició a la línia 15 del fitxer Especie.\+hh.
+
+
+
+\doxysubsection{Documentació del Constructor i el Destructor}
+\mbox{\Hypertarget{class_especie_a597cfbcc08d584338ffe2f5105f9e9c1}\label{class_especie_a597cfbcc08d584338ffe2f5105f9e9c1}} 
+\index{Especie@{Especie}!Especie@{Especie}}
+\index{Especie@{Especie}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{Especie()}{Especie()}}
+{\footnotesize\ttfamily Especie\+::\+Especie (\begin{DoxyParamCaption}\item[{const string \&}]{gen }\end{DoxyParamCaption})}
+
+
+
+Funcio constructora de la classe \mbox{\hyperlink{class_especie}{Especie}}. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha creat una especie amb el gen donat. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em string} & gen Gen de l\textquotesingle{}especie a crear per referencia constant. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 8 del fitxer Especie.\+cc.
+
+Gràfic de crides d\textquotesingle{}aquesta funció\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_especie_a597cfbcc08d584338ffe2f5105f9e9c1_cgraph}
+\end{center}
+\end{figure}
+Gràfic de crides a aquesta funció\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{class_especie_a597cfbcc08d584338ffe2f5105f9e9c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_especie_a15faa059ff1b3ed0b362f4900cb9180d}\label{class_especie_a15faa059ff1b3ed0b362f4900cb9180d}} 
+\index{Especie@{Especie}!Calcula\_distancia@{Calcula\_distancia}}
+\index{Calcula\_distancia@{Calcula\_distancia}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{Calcula\_distancia()}{Calcula\_distancia()}}
+{\footnotesize\ttfamily double Especie\+::\+Calcula\+\_\+distancia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_especie}{Especie}} \&}]{e2 }\end{DoxyParamCaption})}
+
+
+
+Imprimeix la distancia entre l\textquotesingle{}especie donada i el parametre implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+S\textquotesingle{}ha entrat una \mbox{\hyperlink{class_especie}{Especie}}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha retornat la distancia pel canal estandard de sortida. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em \mbox{\hyperlink{class_especie}{Especie}}} & e2 Segona especie a calcular per referencia.\\
+\hline
+\end{DoxyParams}
+La distancia es calcula de la seguent forma\+: $ \delta_k(e_1,e_2) = (1- (\frac{#(kmer(g1, k) ⋂ kmer(g2, k))}{#(kmer(g1, k) ⋃ kmer(g2, k))})) \times 100 $ 
+
+Definició a la línia 44 del fitxer Especie.\+cc.
+
+\mbox{\Hypertarget{class_especie_a59c857829e238edd6f753324ecdc97d6}\label{class_especie_a59c857829e238edd6f753324ecdc97d6}} 
+\index{Especie@{Especie}!Calcula\_kmer@{Calcula\_kmer}}
+\index{Calcula\_kmer@{Calcula\_kmer}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{Calcula\_kmer()}{Calcula\_kmer()}}
+{\footnotesize\ttfamily void Especie\+::\+Calcula\+\_\+kmer (\begin{DoxyParamCaption}\item[{map$<$ string, int $>$ \&}]{map\+\_\+kmers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Calcula els kmer d\textquotesingle{}un gen d\textquotesingle{}una especie. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha separat el gen en strings de longitud k. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em map$<$string,int$>$} & map\+\_\+kmers Mapa de kmers resultant per referencia. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 30 del fitxer Especie.\+cc.
+
+Gràfic de crides a aquesta funció\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_especie_a59c857829e238edd6f753324ecdc97d6_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_especie_a001fb5479e9d3344da53a6b4205df291}\label{class_especie_a001fb5479e9d3344da53a6b4205df291}} 
+\index{Especie@{Especie}!Canviar\_k@{Canviar\_k}}
+\index{Canviar\_k@{Canviar\_k}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{Canviar\_k()}{Canviar\_k()}}
+{\footnotesize\ttfamily void Especie\+::\+Canviar\+\_\+k (\begin{DoxyParamCaption}\item[{int}]{valor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+S\textquotesingle{}utilitza per a obtenir el valor de k. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha afegit el valor de k del programa. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em int} & valor Valor de k. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Funcio auxiliar. 
+\end{DoxyNote}
+
+
+Definició a la línia 74 del fitxer Especie.\+cc.
+
+Gràfic de crides a aquesta funció\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_especie_a001fb5479e9d3344da53a6b4205df291_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_especie_a745fdea7f45a2c586be7b8ef150648d7}\label{class_especie_a745fdea7f45a2c586be7b8ef150648d7}} 
+\index{Especie@{Especie}!Obtenir\_gen@{Obtenir\_gen}}
+\index{Obtenir\_gen@{Obtenir\_gen}!Especie@{Especie}}
+\doxysubsubsection{\texorpdfstring{Obtenir\_gen()}{Obtenir\_gen()}}
+{\footnotesize\ttfamily string Especie\+::\+Obtenir\+\_\+gen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obte el gen de l\textquotesingle{}\mbox{\hyperlink{class_especie}{Especie}} del parametre implicit. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+Retorna el gen associat a l\textquotesingle{}especie donada. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 25 del fitxer Especie.\+cc.
+
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_especie_8hh}{Especie.\+hh}}\item 
+\mbox{\hyperlink{_especie_8cc}{Especie.\+cc}}\end{DoxyCompactItemize}

@@ -1,6 +1,10 @@
 <map id="Especie.hh" name="Especie.hh">
-<area shape="rect" id="node1" title="Representa una Especie amb atributs gen i kmers, on l&#39;ultim agrupa tots els strings de la separacio p..." alt="" coords="21,5,107,32"/>
-<area shape="rect" id="node2" href="$_cjt___especies_8hh.html" title="Representa un conjunt d&#39;Especies amb atribut map_especies, on s&#39;agrupen totes les especies." alt="" coords="5,80,123,107"/>
-<area shape="rect" id="node3" href="$_cjt___clusters_8hh.html" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, on aquest agrupa tots els clusters." alt="" coords="9,155,119,181"/>
-<area shape="rect" id="node4" href="$main_8hh.html" title="Controla el programa." alt="" coords="30,229,98,256"/>
+<area shape="rect" id="node1" title="Representa una Especie amb atributs gen , kmers i map_distancies." alt="" coords="211,5,297,32"/>
+<area shape="rect" id="node2" href="$_cjt___especies_8hh.html" title="Representa un conjunt d&#39;Especies amb atribut map_especies, on s&#39;agrupen totes les especies." alt="" coords="133,80,250,107"/>
+<area shape="rect" id="node8" href="$_especie_8cc.html" title="Representa una Especie." alt="" coords="275,80,361,107"/>
+<area shape="rect" id="node3" href="$_cjt___clusters_8hh.html" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, distancia_min, taula_clusters i set_clu..." alt="" coords="67,155,177,181"/>
+<area shape="rect" id="node7" href="$_cjt___especies_8cc.html" title="Representa un conjunt d&#39;Especies." alt="" coords="202,155,319,181"/>
+<area shape="rect" id="node4" href="$_cjt___clusters_8cc.html" title="Representa un conjunt de clusters." alt="" coords="5,229,116,256"/>
+<area shape="rect" id="node5" href="$program_8hh.html" title="Controla el programa." alt="" coords="140,229,227,256"/>
+<area shape="rect" id="node6" href="$program_8cc.html" title="Arxiu base del programa. Gestiona l&#39;input." alt="" coords="140,304,227,331"/>
 </map>

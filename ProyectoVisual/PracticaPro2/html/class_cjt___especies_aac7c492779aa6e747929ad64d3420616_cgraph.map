@@ -1,4 +1,5 @@
 <map id="Cjt_Especies::Crea_especie" name="Cjt_Especies::Crea_especie">
-<area shape="rect" id="node1" title="Crea una especie i la afegeix al conjunt." alt="" coords="5,5,140,47"/>
-<area shape="rect" id="node2" href="$class_cjt___especies.html#abca52eb0626e5f8ee933bc0715eb7767" title="Comproba si l&#39;element donat esta al conjunt." alt="" coords="188,5,323,47"/>
+<area shape="rect" id="node1" title="Crea una especie i l&#39;afegeix al conjunt." alt="" coords="5,39,140,80"/>
+<area shape="rect" id="node2" href="$class_cjt___especies.html#a8604b8d1c2f89d273062cd2b44d75a6d" title="Afegeix un element a la taula." alt="" coords="188,5,364,47"/>
+<area shape="rect" id="node3" href="$class_cjt___especies.html#abca52eb0626e5f8ee933bc0715eb7767" title="Comprova si l&#39;element donat esta al conjunt." alt="" coords="209,71,343,112"/>
 </map>

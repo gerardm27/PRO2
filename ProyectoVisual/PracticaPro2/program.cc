@@ -1,3 +1,8 @@
+/**
+	*\file program.cc
+	*\brief Arxiu base del programa. Gestiona l'input.
+*/
+
 #include "program.hh"
 
 int main(){

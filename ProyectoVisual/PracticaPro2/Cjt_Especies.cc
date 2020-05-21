@@ -1,3 +1,9 @@
+/**
+	*\file Cjt_Especies.cc
+	*\brief Representa un conjunt d'Especies.
+*/
+
+
 #include "Cjt_Especies.hh"
 
 Cjt_Especies::Cjt_Especies() {
@@ -85,13 +91,9 @@ void Cjt_Especies::Existeix_especie(const string& id) {
 	else cout << "NO" << endl;
 }
 
-void Cjt_Especies::Buida_cjt_especies() {
-	map_especies.clear();
-}
-
 void Cjt_Especies::Llegeix_cjt_especies(const int& n) {
 	taula_distancies.clear();
-	Buida_cjt_especies();
+	map_especies.clear();
 	string id, gen;
 	for (int i = 0; i < n; ++i) {
 		cin >> id >> gen;

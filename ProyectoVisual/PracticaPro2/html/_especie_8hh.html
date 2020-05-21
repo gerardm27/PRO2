@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Representa una <a class="el" href="class_especie.html" title="Classe Especie, conte un gen i un mapa de kmers&lt; &gt;.">Especie</a> amb atributs <b>gen</b> i <b>kmers</b>, on l'ultim agrupa tots els strings de la separacio per kmer.  
+<p>Representa una <a class="el" href="class_especie.html" title="Classe Especie, conte un gen i un mapa de kmers.">Especie</a> amb atributs <b>gen</b> , <b>kmers</b> i <b>map_distancies</b>.  
 <a href="#details">Més...</a></p>
 <div class="textblock"><code>#include &lt;string&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
@@ -79,7 +79,7 @@ Inclou el graf de dependències per a Especie.hh:</div>
 <div class="dyncontent">
 <div class="center"><img src="_especie_8hh__incl.png" border="0" usemap="#_especie_8hh" alt=""/></div>
 <map name="_especie_8hh" id="_especie_8hh">
-<area shape="rect" title="Representa una Especie amb atributs gen i kmers, on l&#39;ultim agrupa tots els strings de la separacio p..." alt="" coords="64,5,151,32"/>
+<area shape="rect" title="Representa una Especie amb atributs gen , kmers i map_distancies." alt="" coords="64,5,151,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,60,107"/>
 <area shape="rect" title=" " alt="" coords="84,80,131,107"/>
 <area shape="rect" title=" " alt="" coords="155,80,227,107"/>
@@ -90,10 +90,14 @@ Aquest gràfic mostra quins fitxers inclouen, de forma directa o indirecta, aque
 <div class="dyncontent">
 <div class="center"><img src="_especie_8hh__dep__incl.png" border="0" usemap="#_especie_8hhdep" alt=""/></div>
 <map name="_especie_8hhdep" id="_especie_8hhdep">
-<area shape="rect" title="Representa una Especie amb atributs gen i kmers, on l&#39;ultim agrupa tots els strings de la separacio p..." alt="" coords="21,5,107,32"/>
-<area shape="rect" href="_cjt___especies_8hh.html" title="Representa un conjunt d&#39;Especies amb atribut map_especies, on s&#39;agrupen totes les especies." alt="" coords="5,80,123,107"/>
-<area shape="rect" href="_cjt___clusters_8hh.html" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, on aquest agrupa tots els clusters." alt="" coords="9,155,119,181"/>
-<area shape="rect" href="main_8hh.html" title="Controla el programa." alt="" coords="30,229,98,256"/>
+<area shape="rect" title="Representa una Especie amb atributs gen , kmers i map_distancies." alt="" coords="211,5,297,32"/>
+<area shape="rect" href="_cjt___especies_8hh.html" title="Representa un conjunt d&#39;Especies amb atribut map_especies, on s&#39;agrupen totes les especies." alt="" coords="133,80,250,107"/>
+<area shape="rect" href="_especie_8cc.html" title="Representa una Especie." alt="" coords="275,80,361,107"/>
+<area shape="rect" href="_cjt___clusters_8hh.html" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, distancia_min, taula_clusters i set_clu..." alt="" coords="67,155,177,181"/>
+<area shape="rect" href="_cjt___especies_8cc.html" title="Representa un conjunt d&#39;Especies." alt="" coords="202,155,319,181"/>
+<area shape="rect" href="_cjt___clusters_8cc.html" title="Representa un conjunt de clusters." alt="" coords="5,229,116,256"/>
+<area shape="rect" href="program_8hh.html" title="Controla el programa." alt="" coords="140,229,227,256"/>
+<area shape="rect" href="program_8cc.html" title="Arxiu base del programa. Gestiona l&#39;input." alt="" coords="140,304,227,331"/>
 </map>
 </div>
 </div>
@@ -102,11 +106,13 @@ Aquest gràfic mostra quins fitxers inclouen, de forma directa o indirecta, aque
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_especie.html">Especie</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe <a class="el" href="class_especie.html" title="Classe Especie, conte un gen i un mapa de kmers&lt; &gt;.">Especie</a>, conte un <em>gen</em> i un <em>mapa de kmers&lt;<em></em> &gt;. </em> <a href="class_especie.html#details">Més...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe <a class="el" href="class_especie.html" title="Classe Especie, conte un gen i un mapa de kmers.">Especie</a>, conte un <em>gen</em> i un <em>mapa</em> <em>de</em> <em>kmers</em>.  <a href="class_especie.html#details">Més...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripció Detallada</h2>
-<div class="textblock"><p>Representa una <a class="el" href="class_especie.html" title="Classe Especie, conte un gen i un mapa de kmers&lt; &gt;.">Especie</a> amb atributs <b>gen</b> i <b>kmers</b>, on l'ultim agrupa tots els strings de la separacio per kmer. </p>
+<div class="textblock"><p>Representa una <a class="el" href="class_especie.html" title="Classe Especie, conte un gen i un mapa de kmers.">Especie</a> amb atributs <b>gen</b> , <b>kmers</b> i <b>map_distancies</b>. </p>
+
+<p class="definition">Definició al fitxer <a class="el" href="_especie_8hh_source.html">Especie.hh</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

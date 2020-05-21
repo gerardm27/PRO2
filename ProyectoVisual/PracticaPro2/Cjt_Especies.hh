@@ -8,29 +8,15 @@
 
 /**
 	*\class Cjt_Especies Cjt_Especies.hh 
-	*\brief Classe de conjunt d'Especies, conte un <em>mapa d'especies</em>.
+	*\brief Classe de conjunt d'Especies, conte un \a mapa \a d'especies.
 */
 class Cjt_Especies
 {
 private:
 	/** 
-		*\short Mapa d'especies amb \a identificador i \a Especie, respectivament. Agrupa especies per al calcul de \a WPGMA.
+		*\short Mapa d'especies amb \a identificador i \a Especie, respectivament. Agrupa especies per al calcul de l'algorisme \a WPGMA.
 	*/
 	map<string, Especie> map_especies;
-
-	/**
-		*\short Taula de distancies amb Identificador i Vector de distancies.
-
-		map<string, vector<double>> Taula_distancies;
-	*/
-
-	/**
-		*\brief Buida el conjunt d'especies.
-		*\note Aquesta funcio no pot ser cridada per l'usuari. Es d'us auxiliar.
-		*\pre Cert
-		*\post S'ha buidat el conjunt d'especies.
-	*/
-	void Buida_cjt_especies();
 
 	/**
 		*\brief Afegeix un element a la taula.
@@ -49,14 +35,15 @@ private:
 	void Eliminar_element_taula_distancies(const string& id);
 
 	/**
-	\brief Comproba si l'element donat esta al conjunt.
-	\note Aquesta funcio no pot ser cridada per l'usuari. Es d'us auxiliar.
-	\pre Found = false.
-	\post Found si existeix l'element al conjunt, !Found si no existeix.
-	\param bool found Boolea per referencia.
-	\param string id Identificador de l'especie a evaluar per referencia constant.
+		*\brief Comprova si l'element donat esta al conjunt.
+		*\note Aquesta funcio no pot ser cridada per l'usuari. Es d'us auxiliar.
+		*\pre Found = false.
+		*\post Found si existeix l'element al conjunt, !Found si no existeix.
+		*\param bool found Boolea per referencia.
+		*\param string id Identificador de l'especie a evaluar per referencia constant.
 	*/
 	void Esta_al_conjunt(bool& found, const string& id);
+
 public:
 	
 	/**
@@ -65,16 +52,17 @@ public:
 	map<pair<string,string>,double> taula_distancies;
 
 	/**
-		*\brief Funcio constructora de la clasee Cjt_Especies.
+		*\brief Funcio constructora de la classe Cjt_Especies.
 	*/
 	Cjt_Especies();
+
 	/**
 		*\brief Funcio destructora de la classe	Cjt_Especies.
 	*/
 	~Cjt_Especies();
 	
 	/**
-		*\brief Crea una especie i la afegeix al conjunt.
+		*\brief Crea una especie i l'afegeix al conjunt.
 		*\warning Salta error si ja existeix una especie amb el mateix identificador.
 		*\pre S'han llegit dos strings id, i gen pel canal estandard d'entrada.
 		*\post S'ha afegit l'especie al conjunt.
@@ -99,6 +87,7 @@ public:
 		*\post S'ha retornat la distancia entre les dues especies donades.
 		*\param string id Identificador de la primera especie per referencia constant.
 		*\param string id2 Identificador de la segona especie per referencia constant.
+
 	*/
 	double Calcula_distancia(const string& id, const string& id2);
 
@@ -112,7 +101,7 @@ public:
 	void Elimina_especie(const string& id);
 
 	/**
-		*\brief Imprimeix si exiteix l'especie donada.
+		*\brief Imprimeix si existeix l'especie donada.
 		*\pre S'ha llegit l'identificador pel canal estandard d'entrada.
 		*\post S'ha escrit si existeix o no l'especie donada pel canal estandard de sortida.
 		*\param string id Identificador de l'especie a evaluar.
@@ -130,7 +119,7 @@ public:
 	/**
 		*\brief Imprimeix el conjunt d'especies.
 		*\pre Cert.
-		*\post S'ha escrit pel canal estandard de sortida el conjunto.
+		*\post S'ha escrit pel canal estandard de sortida el conjunt.
 		*\note Si el conjunt es buit, no s'escriura res.
 	*/
 	void Imprimeix_cjt_especies();

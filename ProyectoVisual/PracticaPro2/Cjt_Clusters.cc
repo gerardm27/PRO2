@@ -1,3 +1,8 @@
+/**
+	*\file Cjt_Clusters.cc
+	*\brief Representa un conjunt de clusters.
+*/
+
 #include "Cjt_Clusters.hh"
 using namespace std;
 
@@ -14,8 +19,10 @@ void Cjt_Clusters::Inicialitza_clusters(const Cjt_Especies& cjt_esp, bool print)
 	taula_clusters = cjt_esp.taula_distancies;
 	set_clusters.clear();
 	mapa_clusters.clear();
+
 	if (taula_clusters.size() != 0) {
 		map<pair<string, string>, double>::iterator it = taula_clusters.begin();
+		
 		string primer = it->first.first;
 		set_clusters.insert(it->first.first);
 		BinTree<pair<string, double> > primer_cluster(make_pair(it->first.first, 0.0));
@@ -35,11 +42,8 @@ void Cjt_Clusters::Inicialitza_clusters(const Cjt_Especies& cjt_esp, bool print)
 
 void Cjt_Clusters::Executa_pas_wpgma(bool print)
 {
-	if (set_clusters.size() <= 1) {
-		cout << "ERROR: num_clusters <= 1" << endl;
-	}
-	else {
-		distancia_min = 99999;
+	if (set_clusters.size() > 1) {
+		distancia_min = HIGH_VALUE;
 		map<pair<string, string>, double>::iterator it = taula_clusters.begin();
 		string id1, id2;
 		while (it != taula_clusters.end()) {
@@ -57,13 +61,19 @@ void Cjt_Clusters::Executa_pas_wpgma(bool print)
 		Eliminar_element_taula_clusters(id2);
 		set_clusters.insert(id1 + id2);
 
+		
 		BinTree<pair<string, double> > a(make_pair(id1 + id2, distancia_min / 2), mapa_clusters.find(id1)->second, mapa_clusters.find(id2)->second);
 		mapa_clusters.insert(make_pair(id1 + id2, a));
 		mapa_clusters.erase(id1);
 		mapa_clusters.erase(id2);
+
 		if (print) {
 			Imprimeix_taula_clusters();
 		}
+
+	}
+	else {
+		cout << "ERROR: num_clusters <= 1" << endl;
 	}
 }
 
@@ -135,7 +145,6 @@ void Cjt_Clusters::Imprimeix_taula_clusters() {
 	}	
 }
 
-
 void Cjt_Clusters::Imprimeix_arbre(BinTree<pair<string, double> > a) {
 	if (!a.empty()) {
 		cout << '[';
@@ -151,7 +160,6 @@ void Cjt_Clusters::Imprimeix_arbre(BinTree<pair<string, double> > a) {
 		cout << ']';
 	}
 }
-	
 	 
 void Cjt_Clusters::Imprimeix_clusters(const string& id)
 {
@@ -164,7 +172,6 @@ void Cjt_Clusters::Imprimeix_clusters(const string& id)
 		cout << "ERROR: El cluster " << id << " no existe." << endl;
 	}
 }
-
 
 void Cjt_Clusters::Imprimeix_arbre_filogenetic()
 {

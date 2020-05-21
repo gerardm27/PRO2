@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kmer_5fvalue_53',['kmer_value',['../class_cjt___especies.html#aa80dea2c67a47a85ee597f7259cd625a',1,'Cjt_Especies']]]
+  ['distancia_5fmin_89',['distancia_min',['../class_cjt___clusters.html#a5ab85c2e4808bfeb0c422453fbd61d9f',1,'Cjt_Clusters']]]
 ];

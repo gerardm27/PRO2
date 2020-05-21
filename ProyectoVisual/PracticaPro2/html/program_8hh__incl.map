@@ -1,0 +1,11 @@
+<map id="program.hh" name="program.hh">
+<area shape="rect" id="node1" title="Controla el programa." alt="" coords="67,5,153,32"/>
+<area shape="rect" id="node2" href="$_cjt___clusters_8hh.html" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, distancia_min, taula_clusters i set_clu..." alt="" coords="55,80,165,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,89,181"/>
+<area shape="rect" id="node4" href="$_cjt___especies_8hh.html" title="Representa un conjunt d&#39;Especies amb atribut map_especies, on s&#39;agrupen totes les especies." alt="" coords="114,155,231,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="109,229,149,256"/>
+<area shape="rect" id="node6" href="$_especie_8hh.html" title="Representa una Especie amb atributs gen , kmers i map_distancies." alt="" coords="173,229,260,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="115,304,169,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="193,304,240,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="265,304,337,331"/>
+</map>

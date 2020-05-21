@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Representa un conjunt de clusters amb l'atribut <b>map_clusters</b>, on aquest agrupa tots els clusters.  
+<p>Representa un conjunt de clusters amb l'atribut <b>map_clusters</b>, <b>distancia_min</b>, <b>taula_clusters</b> i <b>set_clusters</b>.  
 <a href="#details">Més...</a></p>
 <div class="textblock"><code>#include &quot;BinTree.hh&quot;</code><br />
 <code>#include &quot;<a class="el" href="_cjt___especies_8hh_source.html">Cjt_Especies.hh</a>&quot;</code><br />
@@ -78,11 +78,11 @@ Inclou el graf de dependències per a Cjt_Clusters.hh:</div>
 <div class="dyncontent">
 <div class="center"><img src="_cjt___clusters_8hh__incl.png" border="0" usemap="#_cjt___clusters_8hh" alt=""/></div>
 <map name="_cjt___clusters_8hh" id="_cjt___clusters_8hh">
-<area shape="rect" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, on aquest agrupa tots els clusters." alt="" coords="55,5,165,32"/>
+<area shape="rect" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, distancia_min, taula_clusters i set_clu..." alt="" coords="55,5,165,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,89,107"/>
 <area shape="rect" href="_cjt___especies_8hh.html" title="Representa un conjunt d&#39;Especies amb atribut map_especies, on s&#39;agrupen totes les especies." alt="" coords="114,80,231,107"/>
 <area shape="rect" title=" " alt="" coords="109,155,149,181"/>
-<area shape="rect" href="_especie_8hh.html" title="Representa una Especie amb atributs gen i kmers, on l&#39;ultim agrupa tots els strings de la separacio p..." alt="" coords="173,155,260,181"/>
+<area shape="rect" href="_especie_8hh.html" title="Representa una Especie amb atributs gen , kmers i map_distancies." alt="" coords="173,155,260,181"/>
 <area shape="rect" title=" " alt="" coords="115,229,169,256"/>
 <area shape="rect" title=" " alt="" coords="193,229,240,256"/>
 <area shape="rect" title=" " alt="" coords="265,229,337,256"/>
@@ -93,8 +93,10 @@ Aquest gràfic mostra quins fitxers inclouen, de forma directa o indirecta, aque
 <div class="dyncontent">
 <div class="center"><img src="_cjt___clusters_8hh__dep__incl.png" border="0" usemap="#_cjt___clusters_8hhdep" alt=""/></div>
 <map name="_cjt___clusters_8hhdep" id="_cjt___clusters_8hhdep">
-<area shape="rect" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, on aquest agrupa tots els clusters." alt="" coords="5,5,116,32"/>
-<area shape="rect" href="main_8hh.html" title="Controla el programa." alt="" coords="27,80,95,107"/>
+<area shape="rect" title="Representa un conjunt de clusters amb l&#39;atribut map_clusters, distancia_min, taula_clusters i set_clu..." alt="" coords="67,5,177,32"/>
+<area shape="rect" href="_cjt___clusters_8cc.html" title="Representa un conjunt de clusters." alt="" coords="5,80,116,107"/>
+<area shape="rect" href="program_8hh.html" title="Controla el programa." alt="" coords="140,80,227,107"/>
+<area shape="rect" href="program_8cc.html" title="Arxiu base del programa. Gestiona l&#39;input." alt="" coords="140,155,227,181"/>
 </map>
 </div>
 </div>
@@ -103,11 +105,13 @@ Aquest gràfic mostra quins fitxers inclouen, de forma directa o indirecta, aque
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_cjt___clusters.html">Cjt_Clusters</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe de conjunt de Clusters, conte un <em>BinTree de clusters</em>.  <a href="class_cjt___clusters.html#details">Més...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classe de conjunt de Clusters, forma un arbre filogenetic usant l'algorisme WPGMA.  <a href="class_cjt___clusters.html#details">Més...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripció Detallada</h2>
-<div class="textblock"><p>Representa un conjunt de clusters amb l'atribut <b>map_clusters</b>, on aquest agrupa tots els clusters. </p>
+<div class="textblock"><p>Representa un conjunt de clusters amb l'atribut <b>map_clusters</b>, <b>distancia_min</b>, <b>taula_clusters</b> i <b>set_clusters</b>. </p>
+
+<p class="definition">Definició al fitxer <a class="el" href="_cjt___clusters_8hh_source.html">Cjt_Clusters.hh</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,0 +1,322 @@
+\hypertarget{class_cjt___clusters}{}\doxysection{Referència de la Classe Cjt\+\_\+\+Clusters}
+\label{class_cjt___clusters}\index{Cjt\_Clusters@{Cjt\_Clusters}}
+
+
+Classe de conjunt de Clusters, forma un arbre filogenetic usant l\textquotesingle{}algorisme W\+P\+G\+MA.  
+
+
+
+
+{\ttfamily \#include $<$Cjt\+\_\+\+Clusters.\+hh$>$}
+
+
+
+Diagrama de col·laboració per a Cjt\+\_\+\+Clusters\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{class_cjt___clusters__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Mètodes públics}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cjt___clusters_a2e55759944a78043744103e19dd87c1c}\label{class_cjt___clusters_a2e55759944a78043744103e19dd87c1c}} 
+\mbox{\hyperlink{class_cjt___clusters_a2e55759944a78043744103e19dd87c1c}{Cjt\+\_\+\+Clusters}} ()
+\begin{DoxyCompactList}\small\item\em Funcio constructora de la classe \mbox{\hyperlink{class_cjt___clusters}{Cjt\+\_\+\+Clusters}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cjt___clusters_a71b7feadb377225edecc0b980a8c18d6}\label{class_cjt___clusters_a71b7feadb377225edecc0b980a8c18d6}} 
+\mbox{\hyperlink{class_cjt___clusters_a71b7feadb377225edecc0b980a8c18d6}{$\sim$\+Cjt\+\_\+\+Clusters}} ()
+\begin{DoxyCompactList}\small\item\em Funcio destructora de la classe \mbox{\hyperlink{class_cjt___clusters}{Cjt\+\_\+\+Clusters}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_a92e2ce52b982055e934bd2add1962ed3}{Executa\+\_\+pas\+\_\+wpgma}} (bool print=false)
+\begin{DoxyCompactList}\small\item\em Executa un pas de l\textquotesingle{}algorisme W\+P\+G\+MA. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_a9542aedc0e0f795dc72e8018bbfa99e9}{Eliminar\+\_\+element\+\_\+taula\+\_\+clusters}} (const string \&id)
+\begin{DoxyCompactList}\small\item\em Elimina un element de la taula de clusters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_a3ea04aead06bee8a427662ed6a6d7d11}{Afegir\+\_\+element\+\_\+taula\+\_\+clusters}} (const string \&id1, const string \&id2)
+\begin{DoxyCompactList}\small\item\em Afegeix un element a la taula de clusters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_a4bcb0818445570ca22ad8295f6d744b9}{Inicialitza\+\_\+clusters}} (const \mbox{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies}} \&cjt\+\_\+esp, bool print=true)
+\begin{DoxyCompactList}\small\item\em Inicialitza el conjunt de clusters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_a9d642567cf56394781e61c3905a421ca}{Imprimeix\+\_\+clusters}} (const string \&id)
+\begin{DoxyCompactList}\small\item\em Donat un identificador, imprimeix l\textquotesingle{}arbre corresponent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_ae7027b606fcab665c8e4fc7dc551468d}{Imprimeix\+\_\+arbre\+\_\+filogenetic}} ()
+\begin{DoxyCompactList}\small\item\em Imprimeix l\textquotesingle{}arbre resultant de tot l\textquotesingle{}algorisme W\+P\+G\+MA. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cjt___clusters_a829856e036f38eed7dbcc1981855ce57}{Imprimeix\+\_\+taula\+\_\+clusters}} ()
+\begin{DoxyCompactList}\small\item\em Imprimeix la taula de clusters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Mètodes Privats}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_cjt___clusters_a0fe9ac0913e9183d156fe5c7b1711ffe}{Imprimeix\+\_\+arbre}} (Bin\+Tree$<$ pair$<$ string, double $>$ $>$ arbre)
+\begin{DoxyCompactList}\small\item\em Funcio recursiva per imprimir un cluster en forma arborescent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributs Privats}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_cjt___clusters_aaef589ae7a1917b49588de995e324aa3}\label{class_cjt___clusters_aaef589ae7a1917b49588de995e324aa3}} 
+const int \mbox{\hyperlink{class_cjt___clusters_aaef589ae7a1917b49588de995e324aa3}{H\+I\+G\+H\+\_\+\+V\+A\+L\+UE}} = 999999
+\begin{DoxyCompactList}\small\item\em Valor molt alt per inicialitzar la distancia\+\_\+minima;. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cjt___clusters_ab7547220ff75314e1652937ec88d5eba}\label{class_cjt___clusters_ab7547220ff75314e1652937ec88d5eba}} 
+map$<$ string, Bin\+Tree$<$ pair$<$ string, double $>$ $>$ $>$ \mbox{\hyperlink{class_cjt___clusters_ab7547220ff75314e1652937ec88d5eba}{mapa\+\_\+clusters}}
+\begin{DoxyCompactList}\small\item\em Mapa de clusters, conte els clusters ordenats i en forma arborescent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cjt___clusters_a5ab85c2e4808bfeb0c422453fbd61d9f}\label{class_cjt___clusters_a5ab85c2e4808bfeb0c422453fbd61d9f}} 
+double \mbox{\hyperlink{class_cjt___clusters_a5ab85c2e4808bfeb0c422453fbd61d9f}{distancia\+\_\+min}} = \mbox{\hyperlink{class_cjt___clusters_aaef589ae7a1917b49588de995e324aa3}{H\+I\+G\+H\+\_\+\+V\+A\+L\+UE}}
+\begin{DoxyCompactList}\small\item\em Mapa de clusters, conte els clusters ordenats i en forma arborescent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cjt___clusters_aecb911511a3bdd9c1913e333bfcb69fb}\label{class_cjt___clusters_aecb911511a3bdd9c1913e333bfcb69fb}} 
+map$<$ pair$<$ string, string $>$, double $>$ \mbox{\hyperlink{class_cjt___clusters_aecb911511a3bdd9c1913e333bfcb69fb}{taula\+\_\+clusters}}
+\begin{DoxyCompactList}\small\item\em Taula de clusters, conte els clusters ordenats i les distancies respecte als altres. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_cjt___clusters_a102c091742cff3947b597894d6ae9fc7}\label{class_cjt___clusters_a102c091742cff3947b597894d6ae9fc7}} 
+set$<$ string $>$ \mbox{\hyperlink{class_cjt___clusters_a102c091742cff3947b597894d6ae9fc7}{set\+\_\+clusters}}
+\begin{DoxyCompactList}\small\item\em Set de clusters, conte la llista de clusters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripció Detallada}
+Classe de conjunt de Clusters, forma un arbre filogenetic usant l\textquotesingle{}algorisme W\+P\+G\+MA. 
+
+Definició a la línia 13 del fitxer Cjt\+\_\+\+Clusters.\+hh.
+
+
+
+\doxysubsection{Documentació de les Funcions Membre}
+\mbox{\Hypertarget{class_cjt___clusters_a3ea04aead06bee8a427662ed6a6d7d11}\label{class_cjt___clusters_a3ea04aead06bee8a427662ed6a6d7d11}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Afegir\_element\_taula\_clusters@{Afegir\_element\_taula\_clusters}}
+\index{Afegir\_element\_taula\_clusters@{Afegir\_element\_taula\_clusters}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{Afegir\_element\_taula\_clusters()}{Afegir\_element\_taula\_clusters()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::\+Afegir\+\_\+element\+\_\+taula\+\_\+clusters (\begin{DoxyParamCaption}\item[{const string \&}]{id1,  }\item[{const string \&}]{id2 }\end{DoxyParamCaption})}
+
+
+
+Afegeix un element a la taula de clusters. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha afegit un element a la taula de clusters. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em string} & id1 Identificador de la primera especie a fusionar. \\
+\hline
+{\em string} & id2 Identificador de la segona especie a fusionar. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 92 del fitxer Cjt\+\_\+\+Clusters.\+cc.
+
+\mbox{\Hypertarget{class_cjt___clusters_a9542aedc0e0f795dc72e8018bbfa99e9}\label{class_cjt___clusters_a9542aedc0e0f795dc72e8018bbfa99e9}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Eliminar\_element\_taula\_clusters@{Eliminar\_element\_taula\_clusters}}
+\index{Eliminar\_element\_taula\_clusters@{Eliminar\_element\_taula\_clusters}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{Eliminar\_element\_taula\_clusters()}{Eliminar\_element\_taula\_clusters()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::\+Eliminar\+\_\+element\+\_\+taula\+\_\+clusters (\begin{DoxyParamCaption}\item[{const string \&}]{id }\end{DoxyParamCaption})}
+
+
+
+Elimina un element de la taula de clusters. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha eliminat un element de la taula de clusters. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em string} & id Identificador del cluster a eliminar per referencia constant. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 78 del fitxer Cjt\+\_\+\+Clusters.\+cc.
+
+\mbox{\Hypertarget{class_cjt___clusters_a92e2ce52b982055e934bd2add1962ed3}\label{class_cjt___clusters_a92e2ce52b982055e934bd2add1962ed3}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Executa\_pas\_wpgma@{Executa\_pas\_wpgma}}
+\index{Executa\_pas\_wpgma@{Executa\_pas\_wpgma}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{Executa\_pas\_wpgma()}{Executa\_pas\_wpgma()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::\+Executa\+\_\+pas\+\_\+wpgma (\begin{DoxyParamCaption}\item[{bool}]{print = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Executa un pas de l\textquotesingle{}algorisme W\+P\+G\+MA. 
+
+\begin{DoxyWarning}{Atenció}
+Salta error si el numero de clusters del conjunt implicit es menor o igual a u. 
+\end{DoxyWarning}
+\begin{DoxyPrecond}{Precondició}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha executat un pas de l\textquotesingle{}algorisme W\+P\+G\+MA. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em bool} & print Boolea per definir si es necessita imprimir la taula de clusters. Fals de forma predeterminada. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 43 del fitxer Cjt\+\_\+\+Clusters.\+cc.
+
+Gràfic de crides a aquesta funció\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cjt___clusters_a92e2ce52b982055e934bd2add1962ed3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cjt___clusters_a0fe9ac0913e9183d156fe5c7b1711ffe}\label{class_cjt___clusters_a0fe9ac0913e9183d156fe5c7b1711ffe}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Imprimeix\_arbre@{Imprimeix\_arbre}}
+\index{Imprimeix\_arbre@{Imprimeix\_arbre}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{Imprimeix\_arbre()}{Imprimeix\_arbre()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::\+Imprimeix\+\_\+arbre (\begin{DoxyParamCaption}\item[{Bin\+Tree$<$ pair$<$ string, double $>$ $>$}]{arbre }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Funcio recursiva per imprimir un cluster en forma arborescent. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha impres l\textquotesingle{}arbre del parametre pel canal estandard de sortida. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em Bintree$<$pair$<$string,double$>$$>$} & arbre Arbre a imprimir per referencia constant. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Funcio auxiliar. 
+\end{DoxyNote}
+
+
+Definició a la línia 146 del fitxer Cjt\+\_\+\+Clusters.\+cc.
+
+\mbox{\Hypertarget{class_cjt___clusters_ae7027b606fcab665c8e4fc7dc551468d}\label{class_cjt___clusters_ae7027b606fcab665c8e4fc7dc551468d}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Imprimeix\_arbre\_filogenetic@{Imprimeix\_arbre\_filogenetic}}
+\index{Imprimeix\_arbre\_filogenetic@{Imprimeix\_arbre\_filogenetic}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{Imprimeix\_arbre\_filogenetic()}{Imprimeix\_arbre\_filogenetic()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::\+Imprimeix\+\_\+arbre\+\_\+filogenetic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprimeix l\textquotesingle{}arbre resultant de tot l\textquotesingle{}algorisme W\+P\+G\+MA. 
+
+\begin{DoxyWarning}{Atenció}
+Salta error si el nou conjunt de clusters es buit. 
+\end{DoxyWarning}
+\begin{DoxyPrecond}{Precondició}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha escrit pel canal estandard de sortida l\textquotesingle{}arbre resultant de l\textquotesingle{}algorisme W\+P\+G\+MA amb el \mbox{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies}} actual. 
+\end{DoxyPostcond}
+
+
+Definició a la línia 174 del fitxer Cjt\+\_\+\+Clusters.\+cc.
+
+Gràfic de crides a aquesta funció\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cjt___clusters_ae7027b606fcab665c8e4fc7dc551468d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cjt___clusters_a9d642567cf56394781e61c3905a421ca}\label{class_cjt___clusters_a9d642567cf56394781e61c3905a421ca}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Imprimeix\_clusters@{Imprimeix\_clusters}}
+\index{Imprimeix\_clusters@{Imprimeix\_clusters}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{Imprimeix\_clusters()}{Imprimeix\_clusters()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::\+Imprimeix\+\_\+clusters (\begin{DoxyParamCaption}\item[{const string \&}]{id }\end{DoxyParamCaption})}
+
+
+
+Donat un identificador, imprimeix l\textquotesingle{}arbre corresponent. 
+
+\begin{DoxyWarning}{Atenció}
+Salta error si no existeix un cluster amb l\textquotesingle{}identificador donat. 
+\end{DoxyWarning}
+\begin{DoxyPrecond}{Precondició}
+S\textquotesingle{}ha llegit un identificador pel canal estandard d\textquotesingle{}entrada. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha escrit pel canal estandard de sortida l\textquotesingle{}arbre corresponent a l\textquotesingle{}identificador donat. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Paràmetres}
+{\em string} & id Identificador del cluster per referencia constant. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 162 del fitxer Cjt\+\_\+\+Clusters.\+cc.
+
+Gràfic de crides a aquesta funció\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cjt___clusters_a9d642567cf56394781e61c3905a421ca_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_cjt___clusters_a829856e036f38eed7dbcc1981855ce57}\label{class_cjt___clusters_a829856e036f38eed7dbcc1981855ce57}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Imprimeix\_taula\_clusters@{Imprimeix\_taula\_clusters}}
+\index{Imprimeix\_taula\_clusters@{Imprimeix\_taula\_clusters}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{Imprimeix\_taula\_clusters()}{Imprimeix\_taula\_clusters()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::\+Imprimeix\+\_\+taula\+\_\+clusters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Imprimeix la taula de clusters. 
+
+\begin{DoxyPrecond}{Precondició}
+Cert. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha escrit pel canal estandard de sortida la taula de clusters i les distancies corresponents. 
+\end{DoxyPostcond}
+\begin{DoxyNote}{Nota}
+Funcio auxiliar. 
+\end{DoxyNote}
+
+
+Definició a la línia 119 del fitxer Cjt\+\_\+\+Clusters.\+cc.
+
+\mbox{\Hypertarget{class_cjt___clusters_a4bcb0818445570ca22ad8295f6d744b9}\label{class_cjt___clusters_a4bcb0818445570ca22ad8295f6d744b9}} 
+\index{Cjt\_Clusters@{Cjt\_Clusters}!Inicialitza\_clusters@{Inicialitza\_clusters}}
+\index{Inicialitza\_clusters@{Inicialitza\_clusters}!Cjt\_Clusters@{Cjt\_Clusters}}
+\doxysubsubsection{\texorpdfstring{Inicialitza\_clusters()}{Inicialitza\_clusters()}}
+{\footnotesize\ttfamily void Cjt\+\_\+\+Clusters\+::\+Inicialitza\+\_\+clusters (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies}} \&}]{cjt\+\_\+esp,  }\item[{bool}]{print = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Inicialitza el conjunt de clusters. 
+
+\begin{DoxyPrecond}{Precondició}
+Existeix un \mbox{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies}}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondició}
+S\textquotesingle{}ha inicialitzat el Conjunt de clusters amb el \mbox{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies}} actual. S\textquotesingle{}imprimiran els clusters resultants i la taula de distancies corresponent. 
+\end{DoxyPostcond}
+\begin{DoxyNote}{Nota}
+Si el conjunt es buit, no s\textquotesingle{}imprimira res. 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Paràmetres}
+{\em \mbox{\hyperlink{class_cjt___especies}{Cjt\+\_\+\+Especies}}} & cjt\+\_\+esp Conjunt d\textquotesingle{}Especies per referencia constant. \\
+\hline
+{\em bool} & print Boolea per saber si imprimir o no. Cert de forma predeterminada. \\
+\hline
+\end{DoxyParams}
+
+
+Definició a la línia 17 del fitxer Cjt\+\_\+\+Clusters.\+cc.
+
+Gràfic de crides a aquesta funció\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_cjt___clusters_a4bcb0818445570ca22ad8295f6d744b9_icgraph}
+\end{center}
+\end{figure}
+
+
+La documentació d\textquotesingle{}aquesta classe es va generar a partir dels següents fitxers\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_cjt___clusters_8hh}{Cjt\+\_\+\+Clusters.\+hh}}\item 
+\mbox{\hyperlink{_cjt___clusters_8cc}{Cjt\+\_\+\+Clusters.\+cc}}\end{DoxyCompactItemize}

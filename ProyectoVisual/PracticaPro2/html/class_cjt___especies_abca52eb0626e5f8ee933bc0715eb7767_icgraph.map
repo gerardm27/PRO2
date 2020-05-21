@@ -1,8 +1,11 @@
 <map id="Cjt_Especies::Esta_al_conjunt" name="Cjt_Especies::Esta_al_conjunt">
-<area shape="rect" id="node1" title="Comproba si l&#39;element donat esta al conjunt." alt="" coords="231,123,365,164"/>
-<area shape="rect" id="node2" href="$class_cjt___especies.html#aac7c492779aa6e747929ad64d3420616" title="Crea una especie i la afegeix al conjunt." alt="" coords="27,5,161,47"/>
-<area shape="rect" id="node3" href="$class_cjt___especies.html#abb7b2c728df115d2bd8b8f77e53cd931" title="Imprimeix la distancia entre dues especies donades." alt="" coords="13,71,175,98"/>
-<area shape="rect" id="node4" href="$class_cjt___especies.html#a3d086b91aff0c657d11733745ce3e1de" title="Elimina l&#39;especie del conjunt." alt="" coords="19,123,169,164"/>
-<area shape="rect" id="node5" href="$class_cjt___especies.html#ab97a37a24ff3f7b33ed9f7aa2122ed82" title="Imprimeix si exiteix l&#39;especie donada." alt="" coords="17,188,171,229"/>
-<area shape="rect" id="node6" href="$class_cjt___especies.html#a45f4e1db00eb5a1595f981d88177b14c" title="Imprimeix el gen d&#39;un identificador donat." alt="" coords="5,254,183,281"/>
+<area shape="rect" id="node1" title="Comprova si l&#39;element donat esta al conjunt." alt="" coords="683,180,817,221"/>
+<area shape="rect" id="node2" href="$class_cjt___especies.html#a2cc1711f99f535be55530adc17b36cf6" title="Calcula la distancia entre les dues especies." alt="" coords="259,5,409,47"/>
+<area shape="rect" id="node5" href="$class_cjt___especies.html#aac7c492779aa6e747929ad64d3420616" title="Crea una especie i l&#39;afegeix al conjunt." alt="" coords="479,121,613,163"/>
+<area shape="rect" id="node7" href="$class_cjt___especies.html#a3d086b91aff0c657d11733745ce3e1de" title="Elimina l&#39;especie del conjunt." alt="" coords="259,188,409,229"/>
+<area shape="rect" id="node8" href="$class_cjt___especies.html#ab97a37a24ff3f7b33ed9f7aa2122ed82" title="Imprimeix si existeix l&#39;especie donada." alt="" coords="469,239,623,280"/>
+<area shape="rect" id="node9" href="$class_cjt___especies.html#a45f4e1db00eb5a1595f981d88177b14c" title="Imprimeix el gen d&#39;un identificador donat." alt="" coords="457,305,635,331"/>
+<area shape="rect" id="node3" href="$program_8hh.html#a1c1a99a8e87619f86c15bdc6f33e8903" title="Gestiona l&#39;input rebut." alt="" coords="104,163,211,190"/>
+<area shape="rect" id="node4" href="$program_8hh.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Primera funcio que s&#39;executa al programa." alt="" coords="5,163,56,190"/>
+<area shape="rect" id="node6" href="$class_cjt___especies.html#ab30e0d4757be5c84c95f5b02da44c7e3" title="Llegeix i omple un conjunt d&#39;n especies." alt="" coords="260,123,408,164"/>
 </map>

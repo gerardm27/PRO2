@@ -1,0 +1,9 @@
+<map id="Cjt_Especies.cc" name="Cjt_Especies.cc">
+<area shape="rect" id="node1" title="Representa un conjunt d&#39;Especies." alt="" coords="11,5,128,32"/>
+<area shape="rect" id="node2" href="$_cjt___especies_8hh.html" title="Representa un conjunt d&#39;Especies amb atribut map_especies, on s&#39;agrupen totes les especies." alt="" coords="11,80,128,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,45,181"/>
+<area shape="rect" id="node4" href="$_especie_8hh.html" title="Representa una Especie amb atributs gen , kmers i map_distancies." alt="" coords="70,155,157,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="11,229,66,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="90,229,137,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="161,229,233,256"/>
+</map>

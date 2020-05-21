@@ -1,3 +1,8 @@
+/**
+	*\file Especie.cc
+	*\brief Representa una Especie.
+*/
+
 #include "Especie.hh"
 
 Especie::Especie(const string& gen)
