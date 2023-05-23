@@ -10,7 +10,7 @@ Ajuda per a documentar la practica (a mi manera):
               - Certes coses a resaltar en negreta (\b);
               - Per a fer una frase cursiva fer servir (<em>...</em>)
               - Errors que puguin sorgir en warning (\warning);
-              - A sobre de cada nou archiu, especificarlo (\file i \brief);
+              - A sobre de cada nou arxiu, especificarlo (\file i \brief);
               - Per a varibles private fer un petit comentari (\short);
               - Per a fer llistes de arguments fer servir davant de cada nova linia (\arg or \li);
               - Fumada per escriure formules en latex (\formula);
